@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="880.0" style="-fx-background-color: #A9A9A9;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.tpc9_lenicefnseca.RegisterController">
+   <top>
+      <AnchorPane prefHeight="20.0" prefWidth="200.0" style="-fx-background-color: #fff;" BorderPane.alignment="CENTER" />
+   </top>
+   <left>
+      <AnchorPane prefHeight="200.0" prefWidth="20.0" style="-fx-background-color: #fff;" BorderPane.alignment="CENTER" />
+   </left>
+   <right>
+      <AnchorPane prefHeight="200.0" prefWidth="20.0" style="-fx-background-color: #fff;" BorderPane.alignment="CENTER" />
+   </right>
+   <bottom>
+      <AnchorPane prefHeight="20.0" prefWidth="200.0" style="-fx-background-color: #fff;" BorderPane.alignment="CENTER" />
+   </bottom>
+   <center>
+      <SplitPane dividerPositions="0.08422939068100359" orientation="VERTICAL" prefHeight="200.0" prefWidth="160.0" BorderPane.alignment="CENTER">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="92.0" prefWidth="838.0" style="-fx-background-color: #A9A9A9;">
+               <children>
+                  <Label layoutX="225.0" layoutY="11.0" text="PEDRADA DIGITAL - REGISTAR CONTA">
+                     <font>
+                        <Font name="FreeSerif Bold" size="20.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+               <children>
+                  <Label layoutX="28.0" layoutY="31.0" text="Nome">
+                     <font>
+                        <Font name="FreeSerif Bold" size="26.0" />
+                     </font>
+                  </Label>
+                  <TextField layoutX="109.0" layoutY="30.0" prefHeight="35.0" prefWidth="250.0" />
+                  <Label layoutX="447.0" layoutY="32.0" prefHeight="30.0" prefWidth="98.0" text="Apelido">
+                     <font>
+                        <Font name="FreeSerif Bold" size="26.0" />
+                     </font>
+                  </Label>
+                  <TextField layoutX="545.0" layoutY="29.0" prefHeight="35.0" prefWidth="250.0" />
+                  <Line endX="503.0" layoutX="335.0" layoutY="2.0" startX="-342.0" stroke="MEDIUMBLUE" strokeWidth="5.0" />
+               </children>
+            </AnchorPane>
+        </items>
+      </SplitPane>
+   </center>
+</BorderPane>

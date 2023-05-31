@@ -6,10 +6,13 @@ import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
+import javafx.stage.Stage;
 
-import java.sql.PreparedStatement;
+import java.sql.Connection;
 import java.sql.ResultSet;
-import java.sql.SQLException;
+import java.sql.Statement;
+
+import java.sql.*;
 
 public class LoginController {
     @FXML
@@ -34,35 +37,34 @@ public class LoginController {
 
     }
 
-    public void validateLogin() {
+    public void validateLogin(){
+        Conexao connectNow = new Conexao();
+        Connection connectDB = connectNow.getConnection();
 
-        String sql = "SELECT count(1) FROM usuarios WHERE usernam = ? AND password = ?";
-        PreparedStatement preparedStatement = null;
-
-        try {
-
-            preparedStatement = Conexao.getConnection().prepareStatement(sql);
-            ResultSet resultSet = preparedStatement.executeQuery();
-
-            preparedStatement.setString(1, tfusername.getText());
-            preparedStatement.setString(2, pfpassword.getText());
+        try{
+            String verifyLogin = "SELECT count(1) FROM usuarios WHERE username = '" + tfusername.getText() + "' AND password = '" + pfpassword.getText() + "'";
 
 
-            while (resultSet.next()) {
-                if (resultSet.getInt(1) == 1) {
-                    warninglabel.setText("Welcome!");
+            Statement statement = connectDB.createStatement();
+            ResultSet queryResult = statement.executeQuery(verifyLogin);
+
+
+            while(queryResult.next()){
+                if(queryResult.getInt(1) == 1){
+                    warninglabel.setText("Welcome miss " + tfusername.getText());
                 }
                 else {
-                    warninglabel.setText("Username ou password inválidos!");
+                    warninglabel.setText("Invalid username/password");
                 }
             }
-
-            preparedStatement.execute();
-            preparedStatement.close();
-
-        } catch (SQLException e) {
+        }catch (Exception e){
             e.printStackTrace();
         }
+
+
+
+
     }
+
 
 }
