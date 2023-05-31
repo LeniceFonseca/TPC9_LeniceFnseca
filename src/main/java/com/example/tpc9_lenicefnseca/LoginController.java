@@ -42,7 +42,7 @@ public class LoginController {
         Connection connectDB = connectNow.getConnection();
 
         try{
-            String verifyLogin = "SELECT count(1) FROM usuarios WHERE username = '" + tfusername.getText() + "' AND password = '" + pfpassword.getText() + "'";
+            String verifyLogin = "SELECT count(1) FROM usuarios WHERE username = '" + tfusername.getText() + "' AND password = '" + pfpassword.getText() + "';";
 
 
             Statement statement = connectDB.createStatement();
