@@ -60,7 +60,7 @@
                   <Image url="@images/padlock.png" />
                </image>
             </ImageView>
-            <Button fx:id="btnlogin" layoutX="61.0" layoutY="409.0" mnemonicParsing="false" onAction="#warningMessage" prefHeight="54.0" prefWidth="436.0" style="-fx-border-color: #047a8a; -fx-border-width: 3; -fx-background-color: #047a8a;" text="Login" textFill="WHITE">
+            <Button fx:id="btnlogin" layoutX="61.0" layoutY="409.0" mnemonicParsing="false" onAction="#warningMessage" prefHeight="54.0" prefWidth="436.0" style="-fx-border-width: 3; -fx-background-color: #047a8a; -fx-background-radius: 18;" text="Login" textFill="WHITE">
                <font>
                   <Font name="FreeSerif Bold" size="26.0" />
                </font>
