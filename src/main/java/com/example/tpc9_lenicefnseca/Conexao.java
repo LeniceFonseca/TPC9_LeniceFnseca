@@ -6,10 +6,10 @@ import java.sql.SQLException;
 
 public class Conexao {
 
-    Connection connection;
+    static Connection connection;
 
 
-    public Connection getConnection(){
+    public static Connection getConnection(){
 
 
 

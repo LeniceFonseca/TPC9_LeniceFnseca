@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.Cursor?>
 <?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
 <?import javafx.scene.control.Label?>
-<?import javafx.scene.control.PasswordField?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
@@ -12,16 +13,16 @@
 <?import javafx.scene.shape.Line?>
 <?import javafx.scene.text.Font?>
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="880.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.tpc9_lenicefnseca.RegisterController">
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="900.0" prefWidth="1300.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.tpc9_lenicefnseca.RegisterController">
     <left>
-        <AnchorPane prefHeight="200.0" prefWidth="320.0" style="-fx-background-color: #A9A9A9;" BorderPane.alignment="CENTER">
+        <AnchorPane prefHeight="200.0" prefWidth="500.0" style="-fx-background-color: #A9A9A9;" BorderPane.alignment="CENTER">
             <children>
-                <Label alignment="CENTER" layoutX="13.0" layoutY="71.0" prefHeight="45.0" prefWidth="295.0" text="PEDRADA DIGITAL" textAlignment="CENTER">
+                <Label alignment="CENTER" layoutX="65.0" layoutY="155.0" prefHeight="90.0" prefWidth="370.0" text="PEDRADA DIGITAL" textAlignment="CENTER">
                     <font>
-                        <Font name="FreeSerif Bold" size="26.0" />
+                        <Font name="FreeSerif Bold" size="37.0" />
                     </font>
                 </Label>
-                <ImageView fitHeight="329.0" fitWidth="345.0" layoutX="44.0" layoutY="159.0" pickOnBounds="true" preserveRatio="true">
+                <ImageView fitHeight="329.0" fitWidth="345.0" layoutX="134.0" layoutY="344.0" pickOnBounds="true" preserveRatio="true">
                     <image>
                         <Image url="@images/p2.png" />
                     </image>
@@ -30,52 +31,58 @@
         </AnchorPane>
     </left>
     <right>
-        <AnchorPane prefHeight="200.0" prefWidth="560.0" BorderPane.alignment="CENTER">
+        <AnchorPane prefHeight="904.0" prefWidth="804.0" BorderPane.alignment="CENTER">
             <children>
-                <ImageView fitHeight="91.0" fitWidth="108.0" layoutX="234.0" layoutY="85.0" pickOnBounds="true" preserveRatio="true">
+                <ImageView fitHeight="97.0" fitWidth="104.0" layoutX="352.0" layoutY="53.0" pickOnBounds="true" preserveRatio="true">
                     <image>
-                        <Image url="@images/enter.png" />
+                        <Image url="@images/edit.png" />
                     </image>
                 </ImageView>
-                <Circle fill="#1f93ff00" layoutX="291.0" layoutY="131.0" radius="69.0" stroke="#047a8a" strokeType="INSIDE" strokeWidth="5.0" />
-                <Label alignment="CENTER" layoutX="14.0" layoutY="262.0" prefHeight="45.0" prefWidth="205.0" text="Username" textAlignment="CENTER">
-                    <font>
-                        <Font name="FreeSerif Bold" size="25.0" />
-                    </font>
-                </Label>
-                <Label alignment="CENTER" layoutX="10.0" layoutY="323.0" prefHeight="45.0" prefWidth="205.0" text="Password" textAlignment="CENTER">
-                    <font>
-                        <Font name="FreeSerif Bold" size="25.0" />
-                    </font>
-                </Label>
-                <TextField fx:id="tfusername" layoutX="196.0" layoutY="268.0" prefHeight="35.0" prefWidth="300.0" promptText="Username" style="-fx-border-color: #047a8a; -fx-border-width: 3;" />
-                <PasswordField fx:id="pfpassword" layoutX="196.0" layoutY="328.0" prefHeight="35.0" prefWidth="300.0" promptText="Password" style="-fx-border-color: #047a8a; -fx-border-width: 3;" />
-                <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="463.0" layoutY="271.0" pickOnBounds="true" preserveRatio="true">
-                    <image>
-                        <Image url="@images/avatar.png" />
-                    </image>
-                </ImageView>
-                <ImageView fitHeight="27.0" fitWidth="27.0" layoutX="467.0" layoutY="332.0" pickOnBounds="true" preserveRatio="true">
-                    <image>
-                        <Image url="@images/padlock.png" />
-                    </image>
-                </ImageView>
-                <Button fx:id="btnlogin" layoutX="61.0" layoutY="409.0" mnemonicParsing="false" onAction="#warningMessage" prefHeight="54.0" prefWidth="436.0" style="-fx-border-color: #047a8a; -fx-border-width: 3; -fx-background-color: #047a8a; -fx-background-radius: 15;" text="Login" textFill="WHITE">
+                <Circle fill="#1f93ff00" layoutX="396.0" layoutY="102.0" radius="71.0" stroke="#047a8af5" strokeType="INSIDE" strokeWidth="5.0" />
+                <TextField fx:id="tfnome" layoutX="135.0" layoutY="221.0" prefHeight="35.0" prefWidth="250.0" promptText="Nome" style="-fx-border-color: #047a8a; -fx-border-width: 3; -fx-background-radius: 15; -fx-border-radius: 15;" />
+                <Button fx:id="btnsignup" layoutX="178.0" layoutY="645.0" mnemonicParsing="false" onAction="#warningMessage" prefHeight="54.0" prefWidth="436.0" style="-fx-border-color: #047a8a; -fx-border-width: 3; -fx-background-color: #047a8a; -fx-background-radius: 20; -fx-border-radius: 20;" text="Signup" textFill="WHITE">
                     <font>
                         <Font name="FreeSerif Bold" size="26.0" />
                     </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
                 </Button>
-                <Label alignment="CENTER" layoutX="132.0" layoutY="498.0" prefHeight="45.0" prefWidth="166.0" text="Não tem uma conta?" textAlignment="CENTER">
+                <Label alignment="CENTER" layoutX="299.0" layoutY="792.0" prefHeight="45.0" prefWidth="166.0" text="Já possui uma conta?" textAlignment="CENTER">
                     <font>
                         <Font name="FreeSerif Bold" size="16.0" />
                     </font>
                 </Label>
-                <Button alignment="CENTER" contentDisplay="CENTER" layoutX="286.0" layoutY="506.0" mnemonicParsing="false" styleClass="transparent-button" stylesheets="@transparent-button.css" text="Registe-se agora!" textFill="#141dfa">
+                <Button fx:id="btnsignin" alignment="CENTER" contentDisplay="CENTER" layoutX="453.0" layoutY="800.0" mnemonicParsing="false" onAction="#login" styleClass="transparent-button" stylesheets="@transparent-button.css" text="Login!" textFill="#141dfa">
                     <font>
                         <Font name="FreeSerif Bold" size="16.0" />
                     </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
                 </Button>
-                <Line endX="-100.0" endY="436.0" layoutX="97.0" layoutY="171.0" startX="-100.0" startY="-165.0" stroke="#047a8af5" strokeWidth="5.0" />
+                <Line endX="-100.0" endY="730.0" layoutX="98.0" layoutY="171.0" startX="-100.0" startY="-169.0" stroke="#047a8af5" strokeWidth="5.0" />
+            <TextField fx:id="tfapelido" layoutX="409.0" layoutY="221.0" prefHeight="35.0" prefWidth="250.0" promptText="Apelido" style="-fx-border-color: #047a8a; -fx-border-width: 3; -fx-background-radius: 15; -fx-border-radius: 15;" />
+            <TextField fx:id="tfemail" layoutX="134.0" layoutY="282.0" prefHeight="35.0" prefWidth="250.0" promptText="Email" style="-fx-border-color: #047a8a; -fx-border-width: 3; -fx-background-radius: 15; -fx-border-radius: 15;" />
+            <TextField fx:id="tfsenha" layoutX="409.0" layoutY="282.0" prefHeight="35.0" prefWidth="250.0" promptText="Senha" style="-fx-border-color: #047a8a; -fx-border-width: 3; -fx-background-radius: 15; -fx-border-radius: 15;" />
+            <TextField fx:id="tfnomeusuario" layoutX="133.0" layoutY="345.0" prefHeight="35.0" prefWidth="250.0" promptText="Username" style="-fx-border-color: #047a8a; -fx-border-width: 3; -fx-background-radius: 15; -fx-border-radius: 15;" />
+            <TextField fx:id="tfalcunha" layoutX="409.0" layoutY="345.0" prefHeight="35.0" prefWidth="250.0" promptText="Alcunha" style="-fx-border-color: #047a8a; -fx-border-width: 3; -fx-background-radius: 15; -fx-border-radius: 15;" />
+            <TextField fx:id="tfbiografia" alignment="TOP_LEFT" layoutX="138.0" layoutY="476.0" prefHeight="137.0" prefWidth="518.0" promptText="Biografia" style="-fx-border-color: #047a8a; -fx-border-width: 3; -fx-background-radius: 15; -fx-border-radius: 15;" />
+            <TextField fx:id="tfpseudonimo" layoutX="135.0" layoutY="406.0" prefHeight="35.0" prefWidth="250.0" promptText="Pseudônimo" style="-fx-border-color: #047a8a; -fx-border-width: 3; -fx-background-radius: 15; -fx-border-radius: 15;" />
+            <ComboBox fx:id="cbcategoria" layoutX="408.0" layoutY="406.0" prefHeight="35.0" prefWidth="250.0" promptText="Categoria" style="-fx-background-radius: 15; -fx-border-radius: 15; -fx-border-color: #047a8a; -fx-border-width: 3;" />
+            <Button fx:id="btnclearall" layoutX="180.0" layoutY="730.0" mnemonicParsing="false" onAction="#clearAll" prefHeight="54.0" prefWidth="436.0" style="-fx-border-color: #047a8a; -fx-border-width: 3; -fx-background-color: #ffffff; -fx-background-radius: 20; -fx-border-radius: 20;" text="Limpar Tudo" textFill="#047a8af5">
+               <font>
+                  <Font name="FreeSerif Bold" size="26.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Label fx:id="warninglabel" alignment="CENTER" layoutX="217.0" layoutY="845.0" prefHeight="45.0" prefWidth="362.0" textAlignment="CENTER" textFill="#ff392b">
+               <font>
+                  <Font name="FreeSerif Bold" size="16.0" />
+               </font>
+            </Label>
             </children>
         </AnchorPane>
     </right>

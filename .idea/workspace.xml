@@ -5,7 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3d985bbf-97e1-4709-8c93-181592693bf1" name="Changes" comment="done">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/tpc9_lenicefnseca/HomeController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/tpc9_lenicefnseca/home.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/tpc9_lenicefnseca/images/edit.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/tpc9_lenicefnseca/images/lock.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/tpc9_lenicefnseca/images/magnifying-glass.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/tpc9_lenicefnseca/images/profile.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/tpc9_lenicefnseca/images/woman.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/tpc9_lenicefnseca/Conexao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/tpc9_lenicefnseca/Conexao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/tpc9_lenicefnseca/HelloApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/tpc9_lenicefnseca/HelloApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/tpc9_lenicefnseca/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/tpc9_lenicefnseca/LoginController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/tpc9_lenicefnseca/RegisterController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/tpc9_lenicefnseca/RegisterController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/tpc9_lenicefnseca/login.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/tpc9_lenicefnseca/login.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/tpc9_lenicefnseca/register.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/tpc9_lenicefnseca/register.fxml" afterDir="false" />
     </list>
@@ -13,6 +24,14 @@
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+        <option value="FxmlFile" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -33,21 +52,24 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "last_opened_file_path": "/home/lenice/Documents/TPC9_LeniceFnseca",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/lenice/Documents/TPC9_LeniceFnseca/src/main/resources/com/example/tpc9_lenicefnseca/images&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/resources/com/example/tpc9_lenicefnseca/images" />
       <recent name="$PROJECT_DIR$/src/main/resources/com/example/tpc9_lenicefnseca" />
       <recent name="$PROJECT_DIR$/src/main/java/com/example/tpc9_lenicefnseca" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/main/resources/com/example/tpc9_lenicefnseca/images" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
@@ -84,7 +106,14 @@
       <option name="project" value="LOCAL" />
       <updated>1685553798701</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="done">
+      <created>1685646845904</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1685646845904</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
