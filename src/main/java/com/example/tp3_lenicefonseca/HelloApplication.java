@@ -1,10 +1,8 @@
-package com.example.tpc9_lenicefnseca;
+package com.example.tp3_lenicefonseca;
 
 import javafx.application.Application;
-import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
-import javafx.scene.control.ComboBox;
 import javafx.stage.Stage;
 
 import java.io.IOException;

@@ -1,4 +1,4 @@
-package com.example.tpc9_lenicefnseca;
+package com.example.tp3_lenicefonseca;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -16,8 +16,6 @@ import java.sql.Connection;
 import java.sql.ResultSet;
 import java.sql.Statement;
 
-import java.sql.*;
-
 public class LoginController {
     @FXML
     private Label warninglabel;
@@ -29,14 +27,13 @@ public class LoginController {
     private TextField tfusername;
     @FXML
     private PasswordField pfpassword;
+    public static String pegarnome;
 
-
-    public LoginController() {
-    }
 
     @FXML
     public void warningMessage(ActionEvent e) {
         if (tfusername.getText().isBlank() == false && pfpassword.getText().isBlank() == false) {
+            pegarnome = getTfusername();
             validateLogin();
         }
         else {
@@ -82,43 +79,9 @@ public class LoginController {
         stage.show();
     }
 
-    public TextField getTfusername() {
-        return tfusername;
+    public String getTfusername() {
+        return tfusername.getText();
     }
 
-    public Label getWarninglabel() {
-        return warninglabel;
-    }
 
-    public void setWarninglabel(Label warninglabel) {
-        this.warninglabel = warninglabel;
-    }
-
-    public Button getBtnlogin() {
-        return btnlogin;
-    }
-
-    public void setBtnlogin(Button btnlogin) {
-        this.btnlogin = btnlogin;
-    }
-
-    public Button getBtnregister() {
-        return btnregister;
-    }
-
-    public void setBtnregister(Button btnregister) {
-        this.btnregister = btnregister;
-    }
-
-    public void setTfusername(TextField tfusername) {
-        this.tfusername = tfusername;
-    }
-
-    public PasswordField getPfpassword() {
-        return pfpassword;
-    }
-
-    public void setPfpassword(PasswordField pfpassword) {
-        this.pfpassword = pfpassword;
-    }
 }

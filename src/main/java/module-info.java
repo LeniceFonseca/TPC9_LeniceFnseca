@@ -5,8 +5,8 @@ module com.example.tpc9_lenicefnseca {
     requires mysql.connector.j;
 
 
-    opens com.example.tpc9_lenicefnseca to javafx.fxml;
-    exports com.example.tpc9_lenicefnseca;
+    opens com.example.tp3_lenicefonseca to javafx.fxml;
+    exports com.example.tp3_lenicefonseca;
 
 
 }

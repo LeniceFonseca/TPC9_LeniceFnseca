@@ -1,0 +1,682 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="900.0" prefWidth="1300.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.tp3_lenicefonseca.HomeController">
+   <top>
+      <AnchorPane prefHeight="119.0" prefWidth="1300.0" style="-fx-background-color: #047a8a;" BorderPane.alignment="CENTER">
+         <children>
+            <TextField fx:id="tfpesquisar" layoutX="31.0" layoutY="43.0" prefHeight="35.0" prefWidth="250.0" promptText="Pesquisar" style="-fx-background-radius: 15; -fx-border-radius: 15;" />
+            <Button fx:id="btnpesquisar" layoutX="245.0" layoutY="45.0" minHeight="33.0" minWidth="33.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="33.0" style="-fx-background-radius: 30; -fx-min-width: 30; -fx-min-height: 30; -fx-max-height: 30; -fx-max-width: 30; -fx-background-color: transparent;">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></Button>
+            <ImageView fitHeight="25.0" fitWidth="25.0" layoutX="249.0" layoutY="48.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/magnifying-glass.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="lbnomeeapelido" contentDisplay="CENTER" layoutX="585.0" layoutY="33.0" prefHeight="50.0" prefWidth="269.0" text="Nome &amp; Apelido" textFill="WHITE">
+               <font>
+                  <Font name="FreeSerif Bold" size="25.0" />
+               </font>
+            </Label>
+            <Button fx:id="btnsignoff" alignment="CENTER" contentDisplay="CENTER" layoutX="1119.0" layoutY="43.0" mnemonicParsing="false" onAction="#signoff" prefHeight="30.0" prefWidth="150.0" style="-fx-background-color: #ffffff; -fx-background-radius: 15; -fx-background-radius: 15;" text="SignOff">
+               <font>
+                  <Font name="FreeSerif Bold" size="20.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button fx:id="btnmeuperfil" alignment="CENTER" contentDisplay="CENTER" layoutX="938.0" layoutY="42.0" mnemonicParsing="false" onAction="#myprofile" prefHeight="30.0" prefWidth="150.0" style="-fx-background-color: #ffffff; -fx-background-radius: 15; -fx-background-radius: 15;" text="Meu Perfil">
+               <font>
+                  <Font name="FreeSerif Bold" size="20.0" />
+               </font>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Circle fx:id="minhafoto" fill="#1f93ff00" layoutX="513.0" layoutY="58.0" radius="40.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="5.0" />
+            <Circle fill="#1f93ff00" layoutX="513.0" layoutY="58.0" radius="50.0" stroke="#d3d3d3f5" strokeType="INSIDE" strokeWidth="5.0" />
+         </children>
+      </AnchorPane>
+   </top>
+   <left>
+      <ScrollPane prefHeight="200.0" prefWidth="300.0" BorderPane.alignment="CENTER">
+         <content>
+            <VBox alignment="TOP_CENTER" prefHeight="796.0" prefWidth="282.0">
+               <children>
+                  <Label prefHeight="29.0" prefWidth="90.0" text="Eventos" textFill="#047a8af5">
+                     <font>
+                        <Font name="FreeSerif Bold" size="25.0" />
+                     </font>
+                  </Label>
+                  <VBox alignment="TOP_CENTER" prefHeight="200.0" prefWidth="100.0">
+                     <children>
+                        <Label prefHeight="30.0" prefWidth="250.0" />
+                        <ImageView fitHeight="150.0" fitWidth="250.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@images/concerto.jpg" />
+                           </image>
+                        </ImageView>
+                        <Label prefHeight="30.0" prefWidth="250.0" text="18/06/2023">
+                           <font>
+                              <Font name="FreeSerif Bold" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label prefHeight="30.0" prefWidth="250.0" text="Concerto - Ruben Teixeira" textFill="#047a8af5">
+                           <font>
+                              <Font name="FreeSerif Bold" size="20.0" />
+                           </font>
+                        </Label>
+                        <Label prefHeight="30.0" prefWidth="250.0" text="Mindelo">
+                           <font>
+                              <Font name="FreeSerif Bold" size="20.0" />
+                           </font>
+                        </Label>
+                        <Label prefHeight="30.0" prefWidth="250.0" text="200 interessados">
+                           <font>
+                              <Font name="FreeSerif Bold" size="20.0" />
+                           </font>
+                        </Label>
+                        <Label prefHeight="30.0" prefWidth="250.0" text="150 vão" textFill="#d02406">
+                           <font>
+                              <Font name="FreeSerif Bold" size="20.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </VBox>
+                  <VBox alignment="TOP_CENTER" layoutX="10.0" layoutY="39.0" prefHeight="200.0" prefWidth="100.0">
+                     <children>
+                        <Label prefHeight="30.0" prefWidth="250.0" />
+                        <ImageView fitHeight="150.0" fitWidth="250.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@images/trilha.png" />
+                           </image>
+                        </ImageView>
+                        <Label prefHeight="30.0" prefWidth="250.0" text="05/08/2023">
+                           <font>
+                              <Font name="FreeSerif Bold" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label prefHeight="30.0" prefWidth="250.0" text="Trilha" textFill="#047a8af5">
+                           <font>
+                              <Font name="FreeSerif Bold" size="20.0" />
+                           </font>
+                        </Label>
+                        <Label prefHeight="30.0" prefWidth="250.0" text="Verde">
+                           <font>
+                              <Font name="FreeSerif Bold" size="20.0" />
+                           </font>
+                        </Label>
+                        <Label prefHeight="30.0" prefWidth="250.0" text="50 interessados">
+                           <font>
+                              <Font name="FreeSerif Bold" size="20.0" />
+                           </font>
+                        </Label>
+                        <Label prefHeight="30.0" prefWidth="250.0" text="5 vão" textFill="#d02406">
+                           <font>
+                              <Font name="FreeSerif Bold" size="20.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </VBox>
+                  <VBox alignment="TOP_CENTER" layoutX="10.0" layoutY="311.0" prefHeight="200.0" prefWidth="100.0">
+                     <children>
+                        <Label prefHeight="30.0" prefWidth="250.0" />
+                        <ImageView fitHeight="150.0" fitWidth="250.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@images/campanha.jpg" />
+                           </image>
+                        </ImageView>
+                        <Label prefHeight="30.0" prefWidth="250.0" text="10/06/2023">
+                           <font>
+                              <Font name="FreeSerif Bold" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label prefHeight="30.0" prefWidth="250.0" text="Campanha de limpeza" textFill="#047a8af5">
+                           <font>
+                              <Font name="FreeSerif Bold" size="20.0" />
+                           </font>
+                        </Label>
+                        <Label prefHeight="30.0" prefWidth="250.0" text="Norte de Baía">
+                           <font>
+                              <Font name="FreeSerif Bold" size="20.0" />
+                           </font>
+                        </Label>
+                        <Label prefHeight="30.0" prefWidth="250.0" text="50 interessados">
+                           <font>
+                              <Font name="FreeSerif Bold" size="20.0" />
+                           </font>
+                        </Label>
+                        <Label prefHeight="30.0" prefWidth="250.0" text="45 vão" textFill="#d02406">
+                           <font>
+                              <Font name="FreeSerif Bold" size="20.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </VBox>
+                  <VBox alignment="TOP_CENTER" layoutX="10.0" layoutY="583.0" prefHeight="200.0" prefWidth="100.0">
+                     <children>
+                        <Label prefHeight="30.0" prefWidth="250.0" />
+                        <ImageView fitHeight="150.0" fitWidth="250.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@images/otaku.jpg" />
+                           </image>
+                        </ImageView>
+                        <Label prefHeight="30.0" prefWidth="250.0" text="15/09/2023">
+                           <font>
+                              <Font name="FreeSerif Bold" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label prefHeight="30.0" prefWidth="250.0" text="Encontro de Otakus" textFill="#047a8af5">
+                           <font>
+                              <Font name="FreeSerif Bold" size="20.0" />
+                           </font>
+                        </Label>
+                        <Label prefHeight="30.0" prefWidth="250.0" text="CCM">
+                           <font>
+                              <Font name="FreeSerif Bold" size="20.0" />
+                           </font>
+                        </Label>
+                        <Label prefHeight="30.0" prefWidth="250.0" text="500 interessados">
+                           <font>
+                              <Font name="FreeSerif Bold" size="20.0" />
+                           </font>
+                        </Label>
+                        <Label prefHeight="30.0" prefWidth="250.0" text="450 vão" textFill="#d02406">
+                           <font>
+                              <Font name="FreeSerif Bold" size="20.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </VBox>
+               </children>
+            </VBox>
+         </content>
+      </ScrollPane>
+   </left>
+   <right>
+      <ScrollPane prefHeight="200.0" prefWidth="300.0" BorderPane.alignment="CENTER">
+         <content>
+            <VBox alignment="TOP_CENTER" prefHeight="796.0" prefWidth="282.0">
+               <children>
+                  <Label prefHeight="29.0" prefWidth="90.0" text="Grupos" textFill="#047a8af5">
+                     <font>
+                        <Font name="FreeSerif Bold" size="25.0" />
+                     </font>
+                  </Label>
+                  <AnchorPane prefHeight="96.0" prefWidth="285.0">
+                     <children>
+                        <Circle fx:id="circle5" fill="#1f93ff00" layoutX="39.0" layoutY="45.0" radius="31.0" stroke="#047a8a" strokeType="INSIDE" strokeWidth="5.0" />
+                        <Label layoutX="75.0" layoutY="23.0" prefHeight="29.0" prefWidth="202.0" text="Finalistas 2023">
+                           <font>
+                              <Font name="FreeSerif Bold" size="20.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="75.0" layoutY="45.0" prefHeight="29.0" prefWidth="199.0" text="100 mebros" textFill="SILVER">
+                           <font>
+                              <Font name="FreeSerif Bold" size="15.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane layoutX="10.0" layoutY="39.0" prefHeight="96.0" prefWidth="285.0">
+                     <children>
+                        <Circle fx:id="circle6" fill="#1f93ff00" layoutX="39.0" layoutY="45.0" radius="31.0" stroke="#047a8a" strokeType="INSIDE" strokeWidth="5.0" />
+                        <Label layoutX="75.0" layoutY="23.0" prefHeight="29.0" prefWidth="199.0" text="LEIT">
+                           <font>
+                              <Font name="FreeSerif Bold" size="20.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="75.0" layoutY="45.0" prefHeight="29.0" prefWidth="203.0" text="50 mebros" textFill="SILVER">
+                           <font>
+                              <Font name="FreeSerif Bold" size="15.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane layoutX="10.0" layoutY="135.0" prefHeight="96.0" prefWidth="285.0">
+                     <children>
+                        <Circle fx:id="circle7" fill="#1f93ff00" layoutX="39.0" layoutY="45.0" radius="31.0" stroke="#047a8a" strokeType="INSIDE" strokeWidth="5.0" />
+                        <Label layoutX="75.0" layoutY="23.0" prefHeight="29.0" prefWidth="200.0" text="Parquinho">
+                           <font>
+                              <Font name="FreeSerif Bold" size="20.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="75.0" layoutY="45.0" prefHeight="29.0" prefWidth="199.0" text="500 mebros" textFill="SILVER">
+                           <font>
+                              <Font name="FreeSerif Bold" size="15.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane layoutX="10.0" layoutY="231.0" prefHeight="96.0" prefWidth="285.0">
+                     <children>
+                        <Circle fx:id="circle8" fill="#1f93ff00" layoutX="39.0" layoutY="45.0" radius="31.0" stroke="#047a8a" strokeType="INSIDE" strokeWidth="5.0" />
+                        <Label layoutX="75.0" layoutY="23.0" prefHeight="29.0" prefWidth="200.0" text="Caloiros UTA">
+                           <font>
+                              <Font name="FreeSerif Bold" size="20.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="75.0" layoutY="45.0" prefHeight="29.0" prefWidth="202.0" text="50 mebros" textFill="SILVER">
+                           <font>
+                              <Font name="FreeSerif Bold" size="15.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane layoutX="10.0" layoutY="327.0" prefHeight="96.0" prefWidth="285.0">
+                     <children>
+                        <Circle fx:id="circle9" fill="#1f93ff00" layoutX="39.0" layoutY="45.0" radius="31.0" stroke="#047a8a" strokeType="INSIDE" strokeWidth="5.0" />
+                        <Label layoutX="75.0" layoutY="23.0" prefHeight="29.0" prefWidth="201.0" text="AE-UTA">
+                           <font>
+                              <Font name="FreeSerif Bold" size="20.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="75.0" layoutY="45.0" prefHeight="29.0" prefWidth="201.0" text="15 mebros" textFill="SILVER">
+                           <font>
+                              <Font name="FreeSerif Bold" size="15.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+               </children>
+            </VBox>
+         </content></ScrollPane>
+   </right>
+   <center>
+      <ScrollPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <content>
+            <VBox alignment="TOP_CENTER" prefHeight="907.0" prefWidth="697.0">
+               <children>
+                  <BorderPane prefHeight="589.0" prefWidth="667.0">
+                     <top>
+                        <AnchorPane prefHeight="115.0" prefWidth="677.0" style="-fx-background-color: #d3d3d3;" BorderPane.alignment="CENTER">
+                           <children>
+                              <Button fx:id="verperfildousuario" layoutX="15.0" layoutY="14.0" mnemonicParsing="false" prefHeight="90.0" prefWidth="672.0" style="-fx-background-color: transparent;" />
+                              <Label layoutX="118.0" layoutY="33.0" prefHeight="29.0" prefWidth="222.0" text="mali" textFill="#047a8af5">
+                                 <font>
+                                    <Font name="FreeSerif Bold" size="25.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="118.0" layoutY="62.0" prefHeight="29.0" prefWidth="222.0" text="Há 5 horas" textFill="#808e90f5">
+                                 <font>
+                                    <Font name="FreeSerif Bold" size="18.0" />
+                                 </font>
+                              </Label>
+                              <Circle fx:id="circle" fill="#1f93ff00" layoutX="60.0" layoutY="59.0" radius="40.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="5.0" />
+                              <Circle fill="#1f93ff00" layoutX="60.0" layoutY="59.0" radius="46.0" stroke="#047a8af5" strokeType="INSIDE" strokeWidth="5.0" />
+                           </children>
+                        </AnchorPane>
+                     </top>
+                     <left>
+                        <AnchorPane prefHeight="486.0" prefWidth="50.0" style="-fx-background-color: #047a8a;" BorderPane.alignment="CENTER" />
+                     </left>
+                     <center>
+                        <AnchorPane prefHeight="364.0" prefWidth="545.0" BorderPane.alignment="CENTER">
+                           <children>
+                              <Label fx:id="lblegenda" layoutX="19.0" layoutY="6.0" prefHeight="29.0" prefWidth="561.0" textFill="#000000f5">
+                                 <font>
+                                    <Font name="FreeSerif" size="18.0" />
+                                 </font>
+                              </Label>
+                              <ImageView fitHeight="400.0" fitWidth="500.0" layoutX="50.0" layoutY="57.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@images/caramelo.jpg" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                        </AnchorPane>
+                     </center>
+                     <right>
+                        <AnchorPane prefWidth="50.0" style="-fx-background-color: #047a8a;" BorderPane.alignment="CENTER" />
+                     </right>
+                     <bottom>
+                        <AnchorPane prefHeight="115.0" prefWidth="700.0" style="-fx-background-color: #d3d3d3;" BorderPane.alignment="CENTER">
+                           <children>
+                              <Button layoutX="13.0" layoutY="35.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="200.0" style="-fx-background-color: transparent; -fx-border-color: #047a8a; -fx-border-width: 5; -fx-border-radius: 15;" text="Gostar">
+                                 <font>
+                                    <Font name="FreeSerif Bold" size="18.0" />
+                                 </font>
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </Button>
+                              <Button layoutX="487.0" layoutY="35.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="200.0" style="-fx-background-color: transparent; -fx-border-color: #047a8a; -fx-border-width: 5; -fx-border-radius: 15;" text="Ler Comentários">
+                                 <font>
+                                    <Font name="FreeSerif Bold" size="18.0" />
+                                 </font>
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </Button>
+                              <Button layoutX="250.0" layoutY="35.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="200.0" style="-fx-background-color: transparent; -fx-border-color: #047a8a; -fx-border-width: 5; -fx-border-radius: 15;" text="Comentar">
+                                 <font>
+                                    <Font name="FreeSerif Bold" size="18.0" />
+                                 </font>
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </Button>
+                              <Line endX="574.0" endY="1.0" layoutX="113.0" layoutY="115.0" startX="-113.0" startY="1.0" stroke="WHITE" strokeWidth="20.0" />
+                           </children>
+                        </AnchorPane>
+                     </bottom>
+                  </BorderPane>
+                  <BorderPane layoutX="10.0" layoutY="10.0" prefHeight="605.0" prefWidth="678.0">
+                     <top>
+                        <AnchorPane prefHeight="115.0" prefWidth="677.0" style="-fx-background-color: #d3d3d3;" BorderPane.alignment="CENTER">
+                           <children>
+                              <Button fx:id="verperfildousuario1" layoutX="15.0" layoutY="14.0" mnemonicParsing="false" prefHeight="90.0" prefWidth="672.0" style="-fx-background-color: transparent;" />
+                              <Label layoutX="118.0" layoutY="33.0" prefHeight="29.0" prefWidth="222.0" text="jotaP" textFill="#047a8af5">
+                                 <font>
+                                    <Font name="FreeSerif Bold" size="25.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="118.0" layoutY="62.0" prefHeight="29.0" prefWidth="222.0" text="Há 2 dias" textFill="#808e90f5">
+                                 <font>
+                                    <Font name="FreeSerif Bold" size="18.0" />
+                                 </font>
+                              </Label>
+                              <Circle fx:id="circle1" fill="#1f93ff00" layoutX="60.0" layoutY="59.0" radius="40.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="5.0" />
+                              <Circle fill="#1f93ff00" layoutX="60.0" layoutY="59.0" radius="46.0" stroke="#047a8af5" strokeType="INSIDE" strokeWidth="5.0" />
+                           </children>
+                        </AnchorPane>
+                     </top>
+                     <left>
+                        <AnchorPane prefHeight="486.0" prefWidth="50.0" style="-fx-background-color: #047a8a;" BorderPane.alignment="CENTER" />
+                     </left>
+                     <center>
+                        <AnchorPane prefHeight="364.0" prefWidth="545.0" BorderPane.alignment="CENTER">
+                           <children>
+                              <Text fx:id="post" layoutX="43.0" layoutY="33.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Post de texto" wrappingWidth="519.5739974975586">
+                                 <font>
+                                    <Font name="FreeSerif" size="18.0" />
+                                 </font>
+                              </Text>
+                           </children>
+                        </AnchorPane>
+                     </center>
+                     <right>
+                        <AnchorPane prefWidth="50.0" style="-fx-background-color: #047a8a;" BorderPane.alignment="CENTER" />
+                     </right>
+                     <bottom>
+                        <AnchorPane prefHeight="115.0" prefWidth="700.0" style="-fx-background-color: #d3d3d3;" BorderPane.alignment="CENTER">
+                           <children>
+                              <Button layoutX="13.0" layoutY="35.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="200.0" style="-fx-background-color: transparent; -fx-border-color: #047a8a; -fx-border-width: 5; -fx-border-radius: 15;" text="Gostar">
+                                 <font>
+                                    <Font name="FreeSerif Bold" size="18.0" />
+                                 </font>
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </Button>
+                              <Button layoutX="487.0" layoutY="35.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="200.0" style="-fx-background-color: transparent; -fx-border-color: #047a8a; -fx-border-width: 5; -fx-border-radius: 15;" text="Ler Comentários">
+                                 <font>
+                                    <Font name="FreeSerif Bold" size="18.0" />
+                                 </font>
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </Button>
+                              <Button layoutX="250.0" layoutY="35.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="200.0" style="-fx-background-color: transparent; -fx-border-color: #047a8a; -fx-border-width: 5; -fx-border-radius: 15;" text="Comentar">
+                                 <font>
+                                    <Font name="FreeSerif Bold" size="18.0" />
+                                 </font>
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </Button>
+                              <Line endX="574.0" endY="1.0" layoutX="113.0" layoutY="115.0" startX="-113.0" startY="1.0" stroke="WHITE" strokeWidth="20.0" />
+                           </children>
+                        </AnchorPane>
+                     </bottom>
+                  </BorderPane>
+                  <BorderPane layoutX="10.0" layoutY="10.0" prefHeight="589.0" prefWidth="667.0">
+                     <top>
+                        <AnchorPane prefHeight="115.0" prefWidth="677.0" style="-fx-background-color: #d3d3d3;" BorderPane.alignment="CENTER">
+                           <children>
+                              <Button fx:id="verperfildousuario2" layoutX="15.0" layoutY="14.0" mnemonicParsing="false" prefHeight="90.0" prefWidth="672.0" style="-fx-background-color: transparent;" />
+                              <Label layoutX="118.0" layoutY="33.0" prefHeight="29.0" prefWidth="222.0" text="juninha" textFill="#047a8af5">
+                                 <font>
+                                    <Font name="FreeSerif Bold" size="25.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="118.0" layoutY="62.0" prefHeight="29.0" prefWidth="222.0" text="Há 6 minutos" textFill="#808e90f5">
+                                 <font>
+                                    <Font name="FreeSerif Bold" size="18.0" />
+                                 </font>
+                              </Label>
+                              <Circle fx:id="circle2" fill="#1f93ff00" layoutX="60.0" layoutY="59.0" radius="40.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="5.0" />
+                              <Circle fill="#1f93ff00" layoutX="60.0" layoutY="59.0" radius="46.0" stroke="#047a8af5" strokeType="INSIDE" strokeWidth="5.0" />
+                           </children>
+                        </AnchorPane>
+                     </top>
+                     <left>
+                        <AnchorPane prefHeight="486.0" prefWidth="50.0" style="-fx-background-color: #047a8a;" BorderPane.alignment="CENTER" />
+                     </left>
+                     <center>
+                        <AnchorPane prefHeight="364.0" prefWidth="545.0" BorderPane.alignment="CENTER">
+                           <children>
+                              <Label fx:id="lblegenda1" layoutX="19.0" layoutY="6.0" prefHeight="29.0" prefWidth="561.0" text="Avatear e o ccaminho da agua " textFill="#000000f5">
+                                 <font>
+                                    <Font name="FreeSerif" size="18.0" />
+                                 </font>
+                              </Label>
+                              <ImageView fitHeight="400.0" fitWidth="500.0" layoutX="50.0" layoutY="57.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@images/avatarocaminhodaagua2.jpg" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                        </AnchorPane>
+                     </center>
+                     <right>
+                        <AnchorPane prefWidth="50.0" style="-fx-background-color: #047a8a;" BorderPane.alignment="CENTER" />
+                     </right>
+                     <bottom>
+                        <AnchorPane prefHeight="115.0" prefWidth="700.0" style="-fx-background-color: #d3d3d3;" BorderPane.alignment="CENTER">
+                           <children>
+                              <Button layoutX="13.0" layoutY="35.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="200.0" style="-fx-background-color: transparent; -fx-border-color: #047a8a; -fx-border-width: 5; -fx-border-radius: 15;" text="Gostar">
+                                 <font>
+                                    <Font name="FreeSerif Bold" size="18.0" />
+                                 </font>
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </Button>
+                              <Button layoutX="487.0" layoutY="35.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="200.0" style="-fx-background-color: transparent; -fx-border-color: #047a8a; -fx-border-width: 5; -fx-border-radius: 15;" text="Ler Comentários">
+                                 <font>
+                                    <Font name="FreeSerif Bold" size="18.0" />
+                                 </font>
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </Button>
+                              <Button layoutX="250.0" layoutY="35.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="200.0" style="-fx-background-color: transparent; -fx-border-color: #047a8a; -fx-border-width: 5; -fx-border-radius: 15;" text="Comentar">
+                                 <font>
+                                    <Font name="FreeSerif Bold" size="18.0" />
+                                 </font>
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </Button>
+                              <Line endX="574.0" endY="1.0" layoutX="113.0" layoutY="115.0" startX="-113.0" startY="1.0" stroke="WHITE" strokeWidth="20.0" />
+                           </children>
+                        </AnchorPane>
+                     </bottom>
+                  </BorderPane>
+                  <BorderPane layoutX="10.0" layoutY="10.0" prefHeight="589.0" prefWidth="667.0">
+                     <top>
+                        <AnchorPane prefHeight="115.0" prefWidth="677.0" style="-fx-background-color: #d3d3d3;" BorderPane.alignment="CENTER">
+                           <children>
+                              <Button fx:id="verperfildousuario3" layoutX="15.0" layoutY="14.0" mnemonicParsing="false" prefHeight="90.0" prefWidth="672.0" style="-fx-background-color: transparent;" />
+                              <Label layoutX="118.0" layoutY="33.0" prefHeight="29.0" prefWidth="222.0" text="mali" textFill="#047a8af5">
+                                 <font>
+                                    <Font name="FreeSerif Bold" size="25.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="118.0" layoutY="62.0" prefHeight="29.0" prefWidth="222.0" text="Agora mesmo" textFill="#808e90f5">
+                                 <font>
+                                    <Font name="FreeSerif Bold" size="18.0" />
+                                 </font>
+                              </Label>
+                              <Circle fx:id="circle3" fill="#1f93ff00" layoutX="60.0" layoutY="59.0" radius="40.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="5.0" />
+                              <Circle fill="#1f93ff00" layoutX="60.0" layoutY="59.0" radius="46.0" stroke="#047a8af5" strokeType="INSIDE" strokeWidth="5.0" />
+                           </children>
+                        </AnchorPane>
+                     </top>
+                     <left>
+                        <AnchorPane prefHeight="486.0" prefWidth="50.0" style="-fx-background-color: #047a8a;" BorderPane.alignment="CENTER" />
+                     </left>
+                     <center>
+                        <AnchorPane prefHeight="364.0" prefWidth="545.0" BorderPane.alignment="CENTER">
+                           <children>
+                              <Label fx:id="lblegenda2" layoutX="19.0" layoutY="6.0" prefHeight="29.0" prefWidth="561.0" text="Barbie - O filme" textFill="#000000f5">
+                                 <font>
+                                    <Font name="FreeSerif" size="18.0" />
+                                 </font>
+                              </Label>
+                              <ImageView fitHeight="400.0" fitWidth="500.0" layoutX="50.0" layoutY="57.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@images/barbie.jpg" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                        </AnchorPane>
+                     </center>
+                     <right>
+                        <AnchorPane prefWidth="50.0" style="-fx-background-color: #047a8a;" BorderPane.alignment="CENTER" />
+                     </right>
+                     <bottom>
+                        <AnchorPane prefHeight="115.0" prefWidth="700.0" style="-fx-background-color: #d3d3d3;" BorderPane.alignment="CENTER">
+                           <children>
+                              <Button layoutX="13.0" layoutY="35.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="200.0" style="-fx-background-color: transparent; -fx-border-color: #047a8a; -fx-border-width: 5; -fx-border-radius: 15;" text="Gostar">
+                                 <font>
+                                    <Font name="FreeSerif Bold" size="18.0" />
+                                 </font>
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </Button>
+                              <Button layoutX="487.0" layoutY="35.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="200.0" style="-fx-background-color: transparent; -fx-border-color: #047a8a; -fx-border-width: 5; -fx-border-radius: 15;" text="Ler Comentários">
+                                 <font>
+                                    <Font name="FreeSerif Bold" size="18.0" />
+                                 </font>
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </Button>
+                              <Button layoutX="250.0" layoutY="35.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="200.0" style="-fx-background-color: transparent; -fx-border-color: #047a8a; -fx-border-width: 5; -fx-border-radius: 15;" text="Comentar">
+                                 <font>
+                                    <Font name="FreeSerif Bold" size="18.0" />
+                                 </font>
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </Button>
+                              <Line endX="574.0" endY="1.0" layoutX="113.0" layoutY="115.0" startX="-113.0" startY="1.0" stroke="WHITE" strokeWidth="20.0" />
+                           </children>
+                        </AnchorPane>
+                     </bottom>
+                  </BorderPane>
+                  <BorderPane layoutX="10.0" layoutY="599.0" prefHeight="605.0" prefWidth="678.0">
+                     <top>
+                        <AnchorPane prefHeight="115.0" prefWidth="677.0" style="-fx-background-color: #d3d3d3;" BorderPane.alignment="CENTER">
+                           <children>
+                              <Button fx:id="verperfildousuario11" layoutX="15.0" layoutY="14.0" mnemonicParsing="false" prefHeight="90.0" prefWidth="672.0" style="-fx-background-color: transparent;" />
+                              <Label layoutX="118.0" layoutY="33.0" prefHeight="29.0" prefWidth="222.0" text="lens" textFill="#047a8af5">
+                                 <font>
+                                    <Font name="FreeSerif Bold" size="25.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="118.0" layoutY="62.0" prefHeight="29.0" prefWidth="222.0" text="Há 2 meses" textFill="#808e90f5">
+                                 <font>
+                                    <Font name="FreeSerif Bold" size="18.0" />
+                                 </font>
+                              </Label>
+                              <Circle fx:id="circle4" fill="#1f93ff00" layoutX="60.0" layoutY="59.0" radius="40.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="5.0" />
+                              <Circle fill="#1f93ff00" layoutX="60.0" layoutY="59.0" radius="46.0" stroke="#047a8af5" strokeType="INSIDE" strokeWidth="5.0" />
+                           </children>
+                        </AnchorPane>
+                     </top>
+                     <left>
+                        <AnchorPane prefHeight="486.0" prefWidth="50.0" style="-fx-background-color: #047a8a;" BorderPane.alignment="CENTER" />
+                     </left>
+                     <center>
+                        <AnchorPane prefHeight="364.0" prefWidth="545.0" BorderPane.alignment="CENTER">
+                           <children>
+                              <Text fx:id="post1" layoutX="43.0" layoutY="33.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Post de texto" wrappingWidth="519.5739974975586">
+                                 <font>
+                                    <Font name="FreeSerif" size="18.0" />
+                                 </font>
+                              </Text>
+                           </children>
+                        </AnchorPane>
+                     </center>
+                     <right>
+                        <AnchorPane prefWidth="50.0" style="-fx-background-color: #047a8a;" BorderPane.alignment="CENTER" />
+                     </right>
+                     <bottom>
+                        <AnchorPane prefHeight="115.0" prefWidth="700.0" style="-fx-background-color: #d3d3d3;" BorderPane.alignment="CENTER">
+                           <children>
+                              <Button layoutX="13.0" layoutY="35.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="200.0" style="-fx-background-color: transparent; -fx-border-color: #047a8a; -fx-border-width: 5; -fx-border-radius: 15;" text="Gostar">
+                                 <font>
+                                    <Font name="FreeSerif Bold" size="18.0" />
+                                 </font>
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </Button>
+                              <Button layoutX="487.0" layoutY="35.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="200.0" style="-fx-background-color: transparent; -fx-border-color: #047a8a; -fx-border-width: 5; -fx-border-radius: 15;" text="Ler Comentários">
+                                 <font>
+                                    <Font name="FreeSerif Bold" size="18.0" />
+                                 </font>
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </Button>
+                              <Button layoutX="250.0" layoutY="35.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="200.0" style="-fx-background-color: transparent; -fx-border-color: #047a8a; -fx-border-width: 5; -fx-border-radius: 15;" text="Comentar">
+                                 <font>
+                                    <Font name="FreeSerif Bold" size="18.0" />
+                                 </font>
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </Button>
+                              <Line endX="574.0" endY="1.0" layoutX="113.0" layoutY="115.0" startX="-113.0" startY="1.0" stroke="WHITE" strokeWidth="20.0" />
+                           </children>
+                        </AnchorPane>
+                     </bottom>
+                  </BorderPane>
+               </children>
+
+
+
+            </VBox>
+         </content>
+      </ScrollPane>
+   </center>
+</BorderPane>

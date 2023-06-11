@@ -4,21 +4,55 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3d985bbf-97e1-4709-8c93-181592693bf1" name="Changes" comment="done">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/tpc9_lenicefnseca/HomeController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/tpc9_lenicefnseca/home.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/tpc9_lenicefnseca/images/edit.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/tpc9_lenicefnseca/images/lock.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/tpc9_lenicefnseca/images/magnifying-glass.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/tpc9_lenicefnseca/images/profile.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/tpc9_lenicefnseca/images/woman.png" afterDir="false" />
+    <list default="true" id="3d985bbf-97e1-4709-8c93-181592693bf1" name="Changes" comment="registo done">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/tp3_lenicefonseca/HomeController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/tp3_lenicefonseca/images/associacao.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/tp3_lenicefonseca/images/avatarocaminhodaagua2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/tp3_lenicefonseca/images/barbie.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/tp3_lenicefonseca/images/caloiros.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/tp3_lenicefonseca/images/campanha.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/tp3_lenicefonseca/images/caramelo.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/tp3_lenicefonseca/images/concerto.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/tp3_lenicefonseca/images/finalista.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/tp3_lenicefonseca/images/gatoFofo.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/tp3_lenicefonseca/images/halloween.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/tp3_lenicefonseca/images/informatica.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/tp3_lenicefonseca/images/jotaP.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/tp3_lenicefonseca/images/juninha.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/tp3_lenicefonseca/images/lens.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/tp3_lenicefonseca/images/mali.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/tp3_lenicefonseca/images/miranha.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/tp3_lenicefonseca/images/otaku.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/tp3_lenicefonseca/images/pintinho.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/tp3_lenicefonseca/images/rocks.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/tp3_lenicefonseca/images/trilha.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/tp3_lenicefonseca/images/tt.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/tp3_lenicefonseca/myprofile.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/tpc9_lenicefnseca/Conexao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/tpc9_lenicefnseca/Conexao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/tpc9_lenicefnseca/HelloApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/tpc9_lenicefnseca/HelloApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/tpc9_lenicefnseca/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/tpc9_lenicefnseca/LoginController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/tpc9_lenicefnseca/RegisterController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/tpc9_lenicefnseca/RegisterController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/tpc9_lenicefnseca/login.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/tpc9_lenicefnseca/login.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/tpc9_lenicefnseca/register.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/tpc9_lenicefnseca/register.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/tpc9_lenicefnseca/Conexao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/tp3_lenicefonseca/Conexao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/tpc9_lenicefnseca/HelloApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/tp3_lenicefonseca/HelloApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/tpc9_lenicefnseca/HomeController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/tpc9_lenicefnseca/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/tp3_lenicefonseca/LoginController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/tpc9_lenicefnseca/MyprofileController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/tp3_lenicefonseca/MyprofileController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/tpc9_lenicefnseca/RegisterController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/tp3_lenicefonseca/RegisterController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/tpc9_lenicefnseca/home.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/tp3_lenicefonseca/home.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/tpc9_lenicefnseca/images/avatar.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/tp3_lenicefonseca/images/avatar.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/tpc9_lenicefnseca/images/back1.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/tp3_lenicefonseca/images/back1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/tpc9_lenicefnseca/images/edit.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/tp3_lenicefonseca/images/edit.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/tpc9_lenicefnseca/images/enter.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/tp3_lenicefonseca/images/enter.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/tpc9_lenicefnseca/images/lock.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/tp3_lenicefonseca/images/lock.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/tpc9_lenicefnseca/images/magnifying-glass.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/tp3_lenicefonseca/images/magnifying-glass.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/tpc9_lenicefnseca/images/p1.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/tp3_lenicefonseca/images/p1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/tpc9_lenicefnseca/images/p2.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/tp3_lenicefonseca/images/p2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/tpc9_lenicefnseca/images/padlock.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/tp3_lenicefonseca/images/padlock.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/tpc9_lenicefnseca/images/profile.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/tp3_lenicefonseca/images/profile.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/tpc9_lenicefnseca/images/woman.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/tp3_lenicefonseca/images/woman.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/tpc9_lenicefnseca/login.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/tp3_lenicefonseca/login.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/tpc9_lenicefnseca/myprofile.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/tpc9_lenicefnseca/register.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/tp3_lenicefonseca/register.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/tpc9_lenicefnseca/transparent-button.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/tp3_lenicefonseca/transparent-button.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,8 +62,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="FxmlFile" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -52,29 +86,45 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/lenice/Documents/TPC9_LeniceFnseca/src/main/resources/com/example/tpc9_lenicefnseca/images&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "last_directory_selection": "/home/lenice/Documents/TPC9_LeniceFnseca/src/main/java/com/example/tpc9_lenicefnseca",
+    "last_opened_file_path": "/home/lenice/Documents/POO-23/TP3_LeniceFonseca/src/main/resources/com/example/tp3_lenicefonseca/images",
+    "project.structure.last.edited": "Libraries",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/resources/com/example/tp3_lenicefonseca/images" />
       <recent name="$PROJECT_DIR$/src/main/resources/com/example/tpc9_lenicefnseca/images" />
       <recent name="$PROJECT_DIR$/src/main/resources/com/example/tpc9_lenicefnseca" />
       <recent name="$PROJECT_DIR$/src/main/java/com/example/tpc9_lenicefnseca" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/resources/com/example/tp3_lenicefonseca/images" />
       <recent name="$PROJECT_DIR$/src/main/resources/com/example/tpc9_lenicefnseca/images" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="com.example.tpc9_lenicefnseca" />
     </key>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="JetRunConfigurationType">
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <option name="filePath" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -113,13 +163,39 @@
       <option name="project" value="LOCAL" />
       <updated>1685646845904</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="registo done">
+      <created>1686006970153</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1686006970153</updated>
+    </task>
+    <task id="LOCAL-00006" summary="registo done">
+      <created>1686007127018</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1686007127018</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="v" />
     <MESSAGE value="connection ok" />
     <MESSAGE value="done" />
-    <option name="LAST_COMMIT_MESSAGE" value="done" />
+    <MESSAGE value="registo done" />
+    <option name="LAST_COMMIT_MESSAGE" value="registo done" />
   </component>
 </project>
