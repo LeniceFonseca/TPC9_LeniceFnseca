@@ -89,6 +89,10 @@ public class HomeController implements Initializable {
     @FXML
     private Circle minhafoto;
 
+    @FXML
+    private ImageView minhafoto1;
+
+
 
 
     @Override
@@ -109,6 +113,29 @@ public class HomeController implements Initializable {
             }
 
             preparedStatement.execute();
+
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+
+
+        // segundo codigo
+        String sql1 = "SELECT fotoperfil FROM fotos WHERE nome = ?";
+        PreparedStatement preparedStatement1 = null;
+
+        try {
+
+            preparedStatement1 = Conexao.getConnection().prepareStatement(sql1);
+            preparedStatement1.setString(1, LoginController.pegarnome);
+
+            ResultSet resultSet1 = preparedStatement1.executeQuery();
+
+            while (resultSet1.next()) {
+                Image img = new Image(resultSet1.getString("fotoperfil"));
+                minhafoto.setFill(new ImagePattern(img));
+            }
+
+            preparedStatement.execute();
             preparedStatement.close();
 
         } catch (SQLException e) {
@@ -116,8 +143,7 @@ public class HomeController implements Initializable {
         }
 
 
-        Image img = new Image("file:src/main/resources/com/example/tp3_lenicefonseca/images/lens.jpg");
-        minhafoto.setFill(new ImagePattern(img));
+
 
         Image image = new Image("file:src/main/resources/com/example/tp3_lenicefonseca/images/mali.jpg");
         circle.setFill(new ImagePattern(image));
