@@ -25,7 +25,7 @@
                   <Font name="FreeSerif Bold" size="31.0" />
                </font>
             </Label>
-            <Button fx:id="btnhome" layoutX="37.0" layoutY="372.0" mnemonicParsing="false" onAction="#home" prefHeight="54.0" prefWidth="436.0" style="-fx-border-color: #7a065b;" text="Home" textFill="#047a8af5">
+            <Button fx:id="btnhome" layoutX="37.0" layoutY="372.0" mnemonicParsing="false" onMouseClicked="#home" prefHeight="54.0" prefWidth="436.0" style="-fx-border-color: #7a065b;" text="Home" textFill="#047a8af5">
                <font>
                   <Font name="FreeSerif Bold" size="26.0" />
                </font>

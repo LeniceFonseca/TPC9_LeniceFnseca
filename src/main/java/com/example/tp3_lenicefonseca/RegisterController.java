@@ -120,7 +120,7 @@ public class RegisterController implements Initializable {
             Parent root = null;
             try {
 
-                root = FXMLLoader.load(getClass().getResource("myprofile.fxml"));
+                root = FXMLLoader.load(getClass().getResource("login.fxml"));
                 Stage stage = (Stage) btnsignin.getScene().getWindow();
                 stage.setScene(new Scene(root, 1300,900));
                 stage.show();

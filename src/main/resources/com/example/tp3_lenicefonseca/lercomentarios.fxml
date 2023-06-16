@@ -10,20 +10,20 @@
    <content>
       <AnchorPane prefHeight="200.0" prefWidth="598.0">
          <children>
-            <Circle fill="#1f93ff00" layoutX="55.0" layoutY="55.0" radius="41.0" stroke="#7a065b" strokeType="INSIDE" strokeWidth="5.0" />
-            <Label layoutX="105.0" layoutY="14.0" prefHeight="38.0" prefWidth="467.0" text="Autor">
+            <Circle fx:id="fotoautor" fill="#1f93ff00" layoutX="55.0" layoutY="55.0" radius="41.0" stroke="#7a065b" strokeType="INSIDE" strokeWidth="5.0" />
+            <Label fx:id="nomeautor" layoutX="105.0" layoutY="14.0" prefHeight="38.0" prefWidth="467.0" text="Autor">
                <font>
                   <Font name="FreeSerif Bold" size="25.0" />
                </font>
             </Label>
-            <Label layoutX="105.0" layoutY="45.0" prefHeight="38.0" prefWidth="467.0" text="Data e hora" textFill="#808e90">
+            <Label fx:id="dataehora" layoutX="105.0" layoutY="45.0" prefHeight="38.0" prefWidth="467.0" text="Data e hora" textFill="#808e90">
                <font>
                   <Font name="FreeSerif Bold" size="18.0" />
                </font>
             </Label>
-            <Label alignment="TOP_LEFT" layoutX="11.0" layoutY="102.0" prefHeight="91.0" prefWidth="575.0" style="-fx-border-color: #7a065b;">
+            <Label fx:id="comentario" alignment="TOP_LEFT" layoutX="11.0" layoutY="102.0" prefHeight="91.0" prefWidth="575.0" style="-fx-border-color: #7a065b;">
                <font>
-                  <Font name="FreeSerif Bold" size="18.0" />
+                  <Font name="FreeSerif" size="18.0" />
                </font>
             </Label>
          </children>

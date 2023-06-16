@@ -229,7 +229,7 @@
                   </Label>
                   <AnchorPane prefHeight="96.0" prefWidth="285.0">
                      <children>
-                        <Circle fx:id="circle5" fill="#1f93ff00" layoutX="53.0" layoutY="45.0" radius="25.0" stroke="#7a065b" strokeType="INSIDE" strokeWidth="5.0" />
+                        <Circle fx:id="circle5" fill="#1f93ff00" layoutX="53.0" layoutY="45.0" radius="25.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="5.0" />
                         <Label layoutX="89.0" layoutY="23.0" prefHeight="29.0" prefWidth="170.0" text="Finalistas 2023" textFill="#00c1da">
                            <font>
                               <Font name="FreeSerif Bold" size="20.0" />
@@ -240,11 +240,12 @@
                               <Font name="FreeSerif Bold" size="15.0" />
                            </font>
                         </Label>
+                        <Circle fill="#1f93ff00" layoutX="53.0" layoutY="45.0" radius="30.0" stroke="#7a065b" strokeType="INSIDE" strokeWidth="5.0" />
                      </children>
                   </AnchorPane>
                   <AnchorPane layoutX="10.0" layoutY="39.0" prefHeight="96.0" prefWidth="285.0">
                      <children>
-                        <Circle fx:id="circle6" fill="#1f93ff00" layoutX="53.0" layoutY="45.0" radius="25.0" stroke="#7a065b" strokeType="INSIDE" strokeWidth="5.0" />
+                        <Circle fx:id="circle6" fill="#1f93ff00" layoutX="53.0" layoutY="45.0" radius="25.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="5.0" />
                         <Label layoutX="89.0" layoutY="23.0" prefHeight="29.0" prefWidth="170.0" text="LEIT" textFill="#00c1da">
                            <font>
                               <Font name="FreeSerif Bold" size="20.0" />
@@ -255,11 +256,12 @@
                               <Font name="FreeSerif Bold" size="15.0" />
                            </font>
                         </Label>
+                        <Circle fill="#1f93ff00" layoutX="53.0" layoutY="45.0" radius="30.0" stroke="#7a065b" strokeType="INSIDE" strokeWidth="5.0" />
                      </children>
                   </AnchorPane>
                   <AnchorPane layoutX="10.0" layoutY="135.0" prefHeight="96.0" prefWidth="285.0">
                      <children>
-                        <Circle fx:id="circle7" fill="#1f93ff00" layoutX="53.0" layoutY="45.0" radius="25.0" stroke="#7a065b" strokeType="INSIDE" strokeWidth="5.0" />
+                        <Circle fx:id="circle7" fill="#1f93ff00" layoutX="53.0" layoutY="45.0" radius="25.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="5.0" />
                         <Label layoutX="89.0" layoutY="23.0" prefHeight="29.0" prefWidth="170.0" text="Parquinho" textFill="#00c1da">
                            <font>
                               <Font name="FreeSerif Bold" size="20.0" />
@@ -270,11 +272,12 @@
                               <Font name="FreeSerif Bold" size="15.0" />
                            </font>
                         </Label>
+                        <Circle fill="#1f93ff00" layoutX="53.0" layoutY="45.0" radius="30.0" stroke="#7a065b" strokeType="INSIDE" strokeWidth="5.0" />
                      </children>
                   </AnchorPane>
                   <AnchorPane layoutX="10.0" layoutY="231.0" prefHeight="96.0" prefWidth="285.0">
                      <children>
-                        <Circle fx:id="circle8" fill="#1f93ff00" layoutX="53.0" layoutY="45.0" radius="25.0" stroke="#7a065b" strokeType="INSIDE" strokeWidth="5.0" />
+                        <Circle fx:id="circle8" fill="#1f93ff00" layoutX="53.0" layoutY="45.0" radius="25.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="5.0" />
                         <Label layoutX="89.0" layoutY="23.0" prefHeight="29.0" prefWidth="170.0" text="Caloiros UTA" textFill="#00c1da">
                            <font>
                               <Font name="FreeSerif Bold" size="20.0" />
@@ -285,11 +288,12 @@
                               <Font name="FreeSerif Bold" size="15.0" />
                            </font>
                         </Label>
+                        <Circle fill="#1f93ff00" layoutX="53.0" layoutY="45.0" radius="30.0" stroke="#7a065b" strokeType="INSIDE" strokeWidth="5.0" />
                      </children>
                   </AnchorPane>
                   <AnchorPane layoutX="10.0" layoutY="327.0" prefHeight="96.0" prefWidth="285.0">
                      <children>
-                        <Circle fx:id="circle9" fill="#1f93ff00" layoutX="53.0" layoutY="45.0" radius="25.0" stroke="#7a065b" strokeType="INSIDE" strokeWidth="5.0" />
+                        <Circle fx:id="circle9" fill="#1f93ff00" layoutX="53.0" layoutY="45.0" radius="25.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="5.0" />
                         <Label layoutX="89.0" layoutY="23.0" prefHeight="29.0" prefWidth="170.0" text="AE-UTA" textFill="#00c1da">
                            <font>
                               <Font name="FreeSerif Bold" size="20.0" />
@@ -300,6 +304,7 @@
                               <Font name="FreeSerif Bold" size="15.0" />
                            </font>
                         </Label>
+                        <Circle fill="#1f93ff00" layoutX="53.0" layoutY="45.0" radius="30.0" stroke="#7a065b" strokeType="INSIDE" strokeWidth="5.0" />
                      </children>
                   </AnchorPane>
                </children>
@@ -356,7 +361,7 @@
                      <bottom>
                         <AnchorPane prefHeight="115.0" prefWidth="700.0" style="-fx-background-color: #d3d3d3;" BorderPane.alignment="CENTER">
                            <children>
-                              <Button layoutX="13.0" layoutY="35.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="200.0" style="-fx-background-color: transparent; -fx-border-color: #47022e; -fx-border-width: 5; -fx-border-radius: 15;" text="Gostar">
+                              <Button fx:id="gostar" layoutX="13.0" layoutY="35.0" mnemonicParsing="false" onAction="#gostar" prefHeight="35.0" prefWidth="200.0" style="-fx-background-color: transparent; -fx-border-color: #47022e; -fx-border-width: 5; -fx-border-radius: 15;" text="Gostar">
                                  <font>
                                     <Font name="FreeSerif Bold" size="18.0" />
                                  </font>

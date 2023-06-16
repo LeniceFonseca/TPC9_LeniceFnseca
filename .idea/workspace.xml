@@ -4,15 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3d985bbf-97e1-4709-8c93-181592693bf1" name="Changes" comment="upload">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/tp3_lenicefonseca/ComentarController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/tp3_lenicefonseca/LerComentariosController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/tp3_lenicefonseca/comentar.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/tp3_lenicefonseca/lercomentarios.fxml" afterDir="false" />
+    <list default="true" id="3d985bbf-97e1-4709-8c93-181592693bf1" name="Changes" comment="v2">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/tp3_lenicefonseca/HomeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/tp3_lenicefonseca/HomeController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/tp3_lenicefonseca/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/tp3_lenicefonseca/LoginController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/tp3_lenicefonseca/LerComentariosController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/tp3_lenicefonseca/LerComentariosController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/tp3_lenicefonseca/MyprofileController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/tp3_lenicefonseca/MyprofileController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/tp3_lenicefonseca/RegisterController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/tp3_lenicefonseca/RegisterController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/tp3_lenicefonseca/home.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/tp3_lenicefonseca/home.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/tp3_lenicefonseca/lercomentarios.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/tp3_lenicefonseca/lercomentarios.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/tp3_lenicefonseca/myprofile.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/tp3_lenicefonseca/myprofile.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -183,7 +183,14 @@
       <option name="project" value="LOCAL" />
       <updated>1686878623084</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="v2">
+      <created>1686913656600</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1686913656600</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -205,6 +212,7 @@
     <MESSAGE value="tp3 done" />
     <MESSAGE value="pegar imagem do banco de dados" />
     <MESSAGE value="upload" />
-    <option name="LAST_COMMIT_MESSAGE" value="upload" />
+    <MESSAGE value="v2" />
+    <option name="LAST_COMMIT_MESSAGE" value="v2" />
   </component>
 </project>

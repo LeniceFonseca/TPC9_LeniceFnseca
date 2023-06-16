@@ -3,7 +3,11 @@ package com.example.tp3_lenicefonseca;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
+import javafx.scene.Node;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.ComboBox;
 import javafx.scene.control.Label;
@@ -12,8 +16,11 @@ import javafx.scene.image.Image;
 import javafx.scene.paint.ImagePattern;
 import javafx.scene.shape.Circle;
 import javafx.stage.FileChooser;
+import javafx.stage.Stage;
+import org.w3c.dom.events.MouseEvent;
 
 import java.io.File;
+import java.io.IOException;
 import java.net.URL;
 import java.nio.file.Paths;
 import java.sql.PreparedStatement;
@@ -75,6 +82,7 @@ public class MyprofileController implements Initializable {
 
     @FXML
     void adicionarFoto(ActionEvent event) {
+        
         FileChooser fileChooser = new FileChooser();
         FileChooser.ExtensionFilter extFilter = new FileChooser.ExtensionFilter("Imagens", "*.jpg", "*.jpeg", "*.png");
         fileChooser.getExtensionFilters().add(extFilter);
@@ -116,7 +124,7 @@ public class MyprofileController implements Initializable {
             preparedStatementAlterar.setString(7, mpalcunha.getText());
             preparedStatementAlterar.setString(8, mppseudonimo.getText());
             preparedStatementAlterar.setString(9, mpbiografia.getText());
-            preparedStatementAlterar.setString(10, RegisterController.pegarnome);
+            preparedStatementAlterar.setString(10, LoginController.pegarnome);
 
 
             preparedStatementAlterarFotos.setString(1, mpnome.getText());
@@ -131,8 +139,12 @@ public class MyprofileController implements Initializable {
     }
 
     @FXML
-    void home(ActionEvent event) {
-
+    public void home(ActionEvent event) throws IOException {
+        Parent root = null;
+        root = FXMLLoader.load(getClass().getResource("myprofile.fxml"));
+        Stage stage = (Stage) btnsignoff.getScene().getWindow();
+        stage.setScene(new Scene(root, 1300,900));
+        stage.show();
     }
 
     @FXML
@@ -152,6 +164,35 @@ public class MyprofileController implements Initializable {
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
+
+
+        String sql = "SELECT fotoperfil FROM fotos WHERE nome = ?";
+        PreparedStatement preparedStatement1 = null;
+
+        try {
+
+            preparedStatement1 = Conexao.getConnection().prepareStatement(sql);
+            preparedStatement1.setString(1, LoginController.pegarnome);
+
+            ResultSet resultSet1 = preparedStatement1.executeQuery();
+
+            while(resultSet1.next()) {
+
+                if (resultSet1.next() == true) {
+                    Image image = new Image(resultSet1.getString("fotoperfil"));
+                    foto.setFill(new ImagePattern(image));
+                } else {
+                    Image image = new Image("file:src/main/resources/com/example/tp3_lenicefonseca/images/profile.png");
+                    foto.setFill(new ImagePattern(image));
+                }
+            }
+            preparedStatement1.execute();
+            preparedStatement1.close();
+
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+
 
         btnalterardados.setStyle(
                 "-fx-background-color: linear-gradient(from 0% 0% to 100% 0%, #921a5e, #ac3475, #c74d8d);" +
@@ -190,7 +231,7 @@ public class MyprofileController implements Initializable {
 
             preparedStatementPreencher = Conexao.getConnection().prepareStatement(sqlPreencher);
 
-            preparedStatementPreencher.setString(1, RegisterController.pegarnome);
+            preparedStatementPreencher.setString(1, LoginController.pegarnome);
 
             ResultSet resultSetPreencher = preparedStatementPreencher.executeQuery();
 

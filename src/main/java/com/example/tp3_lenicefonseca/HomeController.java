@@ -97,6 +97,9 @@ public class HomeController implements Initializable {
     private Button comentar;
 
     @FXML
+    private Button gostar;
+
+    @FXML
     private Button lercomentario;
 
     @FXML
@@ -107,6 +110,8 @@ public class HomeController implements Initializable {
 
     @FXML
     private ScrollPane scrollgrupos;
+
+    static String caminho;
 
 
 
@@ -157,6 +162,7 @@ public class HomeController implements Initializable {
             while (resultSet1.next()) {
                 Image img = new Image(resultSet1.getString("fotoperfil"));
                 minhafoto.setFill(new ImagePattern(img));
+                caminho = resultSet1.getString("fotoperfil");
             }
 
             preparedStatement.execute();
@@ -185,19 +191,19 @@ public class HomeController implements Initializable {
         circle4.setFill(new ImagePattern(image4));
 
         Image image5 = new Image("file:src/main/resources/com/example/tp3_lenicefonseca/images/finalista.jpeg");
-        circle4.setFill(new ImagePattern(image5));
+        circle5.setFill(new ImagePattern(image5));
 
-        Image image6 = new Image("file:src/main/resources/com/example/tp3_lenicefonseca/images/infomatica.jpg");
-        circle4.setFill(new ImagePattern(image6));
+        Image image6 = new Image("file:src/main/resources/com/example/tp3_lenicefonseca/images/informatica.jpg");
+        circle6.setFill(new ImagePattern(image6));
 
         Image image7 = new Image("file:src/main/resources/com/example/tp3_lenicefonseca/images/pintinho.jpg");
-        circle4.setFill(new ImagePattern(image7));
+        circle7.setFill(new ImagePattern(image7));
 
         Image image8 = new Image("file:src/main/resources/com/example/tp3_lenicefonseca/images/caloiros.jpg");
-        circle4.setFill(new ImagePattern(image8));
+        circle8.setFill(new ImagePattern(image8));
 
         Image image9 = new Image("file:src/main/resources/com/example/tp3_lenicefonseca/images/associacao.jpg");
-        circle4.setFill(new ImagePattern(image9));
+        circle9.setFill(new ImagePattern(image9));
 
         post.setText("""
                 De tudo, ao meu amor serei atento
@@ -226,6 +232,18 @@ public class HomeController implements Initializable {
                 - Volte amanhã!
                 """);
 
+    }
+
+    @FXML
+    void gostar(ActionEvent event) {
+        gostar.setStyle(
+                "-fx-background-color: transparent;" +
+                        "-fx-text-fill: #00BFFF;" +
+                        "-fx-font-size: 18px;" +
+                        "-fx-border-color: #47022e;" +
+                        "-fx-border-width: 5;" +
+                        "-fx-border-radius: 15;"
+        );
     }
 
     public void signoff(ActionEvent e) throws IOException {
