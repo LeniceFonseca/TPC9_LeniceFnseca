@@ -119,7 +119,7 @@ public class HomeController implements Initializable {
         }
 
 
-        // segundo codigo
+
         String sql1 = "SELECT fotoperfil FROM fotos WHERE nome = ?";
         PreparedStatement preparedStatement1 = null;
 

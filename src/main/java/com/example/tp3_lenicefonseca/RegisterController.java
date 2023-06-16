@@ -43,6 +43,8 @@ public class RegisterController implements Initializable {
     @FXML
     private Label warninglabel;
 
+    static String pegarnome;
+
 
     public void login(ActionEvent e) throws IOException {
         Parent root = null;
@@ -55,6 +57,18 @@ public class RegisterController implements Initializable {
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
         cbcategoria.getItems().addAll("Estudante", "Professor", "Funcionario", "Ex Aluno");
+
+        btnsignup.setStyle(
+                "-fx-background-color: linear-gradient(from 0% 0% to 100% 0%, #921a5e, #ac3475, #c74d8d);" +
+                        "-fx-text-fill: white;" +
+                        "-fx-font-size: 26px;"
+        );
+
+        btnclearall.setStyle(
+                "-fx-background-color: linear-gradient(from 0% 0% to 100% 0%, #921a5e, #ac3475, #c74d8d);" +
+                        "-fx-text-fill: white;" +
+                        "-fx-font-size: 26px;"
+        );
     }
 
     public void clearAll() {
@@ -101,11 +115,12 @@ public class RegisterController implements Initializable {
                         && tfpseudonimo.getText().isBlank() == false && tfnome.getText().isBlank() == false && tfemail.getText().isBlank() == false
                         && tfapelido.getText().isBlank() == false && cbcategoria.getValue().isBlank() == false
         ) {
+            pegarnome = tfnomeusuario.getText();
             createAccount();
             Parent root = null;
             try {
 
-                root = FXMLLoader.load(getClass().getResource("home.fxml"));
+                root = FXMLLoader.load(getClass().getResource("myprofile.fxml"));
                 Stage stage = (Stage) btnsignin.getScene().getWindow();
                 stage.setScene(new Scene(root, 1300,900));
                 stage.show();

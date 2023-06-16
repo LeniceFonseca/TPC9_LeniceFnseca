@@ -15,31 +15,25 @@
 
 <BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="900.0" prefWidth="1300.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.tp3_lenicefonseca.RegisterController">
     <left>
-        <AnchorPane prefHeight="200.0" prefWidth="500.0" style="-fx-background-color: #A9A9A9;" BorderPane.alignment="CENTER">
+        <AnchorPane prefHeight="200.0" prefWidth="500.0" style="-fx-background-color: #7a065b;" BorderPane.alignment="CENTER">
             <children>
-                <Label alignment="CENTER" layoutX="65.0" layoutY="155.0" prefHeight="90.0" prefWidth="370.0" text="PEDRADA DIGITAL" textAlignment="CENTER">
+                <Label alignment="CENTER" layoutX="58.0" layoutY="150.0" prefHeight="207.0" prefWidth="386.0" text="PEDRADA DIGITAL" textAlignment="CENTER" textFill="WHITE">
                     <font>
                         <Font name="FreeSerif Bold" size="37.0" />
                     </font>
                 </Label>
-                <ImageView fitHeight="329.0" fitWidth="345.0" layoutX="134.0" layoutY="344.0" pickOnBounds="true" preserveRatio="true">
+                <ImageView fitHeight="329.0" fitWidth="345.0" layoutX="68.0" layoutY="342.0" pickOnBounds="true" preserveRatio="true">
                     <image>
-                        <Image url="@images/p2.png" />
+                        <Image url="@images/stone1.png" />
                     </image>
                 </ImageView>
             </children>
         </AnchorPane>
     </left>
     <right>
-        <AnchorPane prefHeight="904.0" prefWidth="804.0" BorderPane.alignment="CENTER">
+        <AnchorPane prefHeight="904.0" prefWidth="804.0" style="-fx-background-color: #36001f;" BorderPane.alignment="CENTER">
             <children>
-                <ImageView fitHeight="97.0" fitWidth="104.0" layoutX="352.0" layoutY="53.0" pickOnBounds="true" preserveRatio="true">
-                    <image>
-                        <Image url="@images/edit.png" />
-                    </image>
-                </ImageView>
-                <Circle fill="#1f93ff00" layoutX="396.0" layoutY="102.0" radius="71.0" stroke="#047a8af5" strokeType="INSIDE" strokeWidth="5.0" />
-                <TextField fx:id="tfnome" layoutX="135.0" layoutY="221.0" prefHeight="35.0" prefWidth="250.0" promptText="Nome" style="-fx-border-color: #047a8a; -fx-border-width: 3; -fx-background-radius: 15; -fx-border-radius: 15;" />
+                <TextField fx:id="tfnome" layoutX="135.0" layoutY="221.0" prefHeight="35.0" prefWidth="250.0" promptText="Nome" style="-fx-border-color: #7a065b; -fx-background-radius: 5; -fx-border-radius: 5; -fx-border-width: 3;" />
                 <Button fx:id="btnsignup" layoutX="178.0" layoutY="645.0" mnemonicParsing="false" onAction="#warningMessage" prefHeight="54.0" prefWidth="436.0" style="-fx-border-color: #047a8a; -fx-border-width: 3; -fx-background-color: #047a8a; -fx-background-radius: 20; -fx-border-radius: 20;" text="Signup" textFill="WHITE">
                     <font>
                         <Font name="FreeSerif Bold" size="26.0" />
@@ -48,12 +42,12 @@
                   <Cursor fx:constant="HAND" />
                </cursor>
                 </Button>
-                <Label alignment="CENTER" layoutX="299.0" layoutY="792.0" prefHeight="45.0" prefWidth="166.0" text="Já possui uma conta?" textAlignment="CENTER">
+                <Label alignment="CENTER" layoutX="299.0" layoutY="792.0" prefHeight="45.0" prefWidth="166.0" text="Já possui uma conta?" textAlignment="CENTER" textFill="WHITE">
                     <font>
                         <Font name="FreeSerif Bold" size="16.0" />
                     </font>
                 </Label>
-                <Button fx:id="btnsignin" alignment="CENTER" contentDisplay="CENTER" layoutX="453.0" layoutY="800.0" mnemonicParsing="false" onAction="#login" styleClass="transparent-button" stylesheets="@transparent-button.css" text="Login!" textFill="#141dfa">
+                <Button fx:id="btnsignin" alignment="CENTER" contentDisplay="CENTER" layoutX="453.0" layoutY="800.0" mnemonicParsing="false" onAction="#login" styleClass="transparent-button" stylesheets="@transparent-button.css" text="Login!" textFill="#ec0ffa">
                     <font>
                         <Font name="FreeSerif Bold" size="16.0" />
                     </font>
@@ -61,16 +55,16 @@
                   <Cursor fx:constant="HAND" />
                </cursor>
                 </Button>
-                <Line endX="-100.0" endY="730.0" layoutX="98.0" layoutY="171.0" startX="-100.0" startY="-169.0" stroke="#047a8af5" strokeWidth="5.0" />
-            <TextField fx:id="tfapelido" layoutX="409.0" layoutY="221.0" prefHeight="35.0" prefWidth="250.0" promptText="Apelido" style="-fx-border-color: #047a8a; -fx-border-width: 3; -fx-background-radius: 15; -fx-border-radius: 15;" />
-            <TextField fx:id="tfemail" layoutX="134.0" layoutY="282.0" prefHeight="35.0" prefWidth="250.0" promptText="Email" style="-fx-border-color: #047a8a; -fx-border-width: 3; -fx-background-radius: 15; -fx-border-radius: 15;" />
-            <TextField fx:id="tfsenha" layoutX="409.0" layoutY="282.0" prefHeight="35.0" prefWidth="250.0" promptText="Senha" style="-fx-border-color: #047a8a; -fx-border-width: 3; -fx-background-radius: 15; -fx-border-radius: 15;" />
-            <TextField fx:id="tfnomeusuario" layoutX="133.0" layoutY="345.0" prefHeight="35.0" prefWidth="250.0" promptText="Username" style="-fx-border-color: #047a8a; -fx-border-width: 3; -fx-background-radius: 15; -fx-border-radius: 15;" />
-            <TextField fx:id="tfalcunha" layoutX="409.0" layoutY="345.0" prefHeight="35.0" prefWidth="250.0" promptText="Alcunha" style="-fx-border-color: #047a8a; -fx-border-width: 3; -fx-background-radius: 15; -fx-border-radius: 15;" />
-            <TextField fx:id="tfbiografia" alignment="TOP_LEFT" layoutX="138.0" layoutY="476.0" prefHeight="137.0" prefWidth="518.0" promptText="Biografia" style="-fx-border-color: #047a8a; -fx-border-width: 3; -fx-background-radius: 15; -fx-border-radius: 15;" />
-            <TextField fx:id="tfpseudonimo" layoutX="135.0" layoutY="406.0" prefHeight="35.0" prefWidth="250.0" promptText="Pseudônimo" style="-fx-border-color: #047a8a; -fx-border-width: 3; -fx-background-radius: 15; -fx-border-radius: 15;" />
-            <ComboBox fx:id="cbcategoria" layoutX="408.0" layoutY="406.0" prefHeight="35.0" prefWidth="250.0" promptText="Categoria" style="-fx-background-radius: 15; -fx-border-radius: 15; -fx-border-color: #047a8a; -fx-border-width: 3;" />
-            <Button fx:id="btnclearall" layoutX="180.0" layoutY="730.0" mnemonicParsing="false" onAction="#clearAll" prefHeight="54.0" prefWidth="436.0" style="-fx-border-color: #047a8a; -fx-border-width: 3; -fx-background-color: #ffffff; -fx-background-radius: 20; -fx-border-radius: 20;" text="Limpar Tudo" textFill="#047a8af5">
+                <Line endX="-100.0" endY="730.0" layoutX="98.0" layoutY="171.0" startX="-100.0" startY="-169.0" stroke="#fffffff5" strokeWidth="5.0" />
+            <TextField fx:id="tfapelido" layoutX="409.0" layoutY="221.0" prefHeight="35.0" prefWidth="250.0" promptText="Apelido" style="-fx-border-color: #7a065b; -fx-background-radius: 5; -fx-border-radius: 5; -fx-border-width: 3;" />
+            <TextField fx:id="tfemail" layoutX="134.0" layoutY="282.0" prefHeight="35.0" prefWidth="250.0" promptText="Email" style="-fx-border-color: #7a065b; -fx-background-radius: 5; -fx-border-radius: 5; -fx-border-width: 3;" />
+            <TextField fx:id="tfsenha" layoutX="409.0" layoutY="282.0" prefHeight="35.0" prefWidth="250.0" promptText="Senha" style="-fx-border-color: #7a065b; -fx-background-radius: 5; -fx-border-radius: 5; -fx-border-width: 3;" />
+            <TextField fx:id="tfnomeusuario" layoutX="133.0" layoutY="345.0" prefHeight="35.0" prefWidth="250.0" promptText="Username" style="-fx-border-color: #7a065b; -fx-background-radius: 5; -fx-border-radius: 5; -fx-border-width: 3;" />
+            <TextField fx:id="tfalcunha" layoutX="409.0" layoutY="345.0" prefHeight="35.0" prefWidth="250.0" promptText="Alcunha" style="-fx-border-color: #7a065b; -fx-background-radius: 5; -fx-border-radius: 5; -fx-border-width: 3;" />
+            <TextField fx:id="tfbiografia" alignment="TOP_LEFT" layoutX="138.0" layoutY="476.0" prefHeight="137.0" prefWidth="518.0" promptText="Biografia" style="-fx-border-color: #7a065b; -fx-background-radius: 5; -fx-border-radius: 5; -fx-border-width: 3;" />
+            <TextField fx:id="tfpseudonimo" layoutX="135.0" layoutY="406.0" prefHeight="35.0" prefWidth="250.0" promptText="Pseudônimo" style="-fx-border-color: #7a065b; -fx-background-radius: 5; -fx-border-radius: 5; -fx-border-width: 3;" />
+            <ComboBox fx:id="cbcategoria" layoutX="408.0" layoutY="406.0" prefHeight="35.0" prefWidth="250.0" promptText="Categoria" style="-fx-border-color: #7a065b; -fx-border-radius: 5; -fx-background-radius: 5; -fx-border-width: 3;" />
+            <Button fx:id="btnclearall" layoutX="180.0" layoutY="730.0" mnemonicParsing="false" onAction="#clearAll" prefHeight="54.0" prefWidth="436.0" style="-fx-border-color: #7a065b;" text="Limpar Tudo" textFill="#047a8af5">
                <font>
                   <Font name="FreeSerif Bold" size="26.0" />
                </font>
@@ -78,11 +72,17 @@
                   <Cursor fx:constant="HAND" />
                </cursor>
             </Button>
-            <Label fx:id="warninglabel" alignment="CENTER" layoutX="217.0" layoutY="845.0" prefHeight="45.0" prefWidth="362.0" textAlignment="CENTER" textFill="#ff392b">
+            <Label fx:id="warninglabel" alignment="CENTER" layoutX="217.0" layoutY="845.0" prefHeight="45.0" prefWidth="362.0" textAlignment="CENTER" textFill="WHITE">
                <font>
                   <Font name="FreeSerif Bold" size="16.0" />
                </font>
             </Label>
+            <Circle fill="WHITE" layoutX="409.0" layoutY="97.0" radius="83.0" stroke="BLACK" strokeType="INSIDE" />
+            <ImageView fitHeight="126.0" fitWidth="120.0" layoutX="355.0" layoutY="37.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/edit.png" />
+               </image>
+            </ImageView>
             </children>
         </AnchorPane>
     </right>
