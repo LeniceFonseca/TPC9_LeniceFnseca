@@ -15,6 +15,7 @@ import javafx.scene.paint.ImagePattern;
 import javafx.scene.paint.Stop;
 import javafx.scene.shape.Circle;
 import javafx.stage.FileChooser;
+import javafx.stage.Modality;
 import javafx.stage.Stage;
 
 import java.io.File;
@@ -36,6 +37,8 @@ public class LoginController implements Initializable {
     private TextField tfusername;
     @FXML
     private PasswordField pfpassword;
+    @FXML
+    private Button comentar;
     public static String pegarnome;
 
 
@@ -103,6 +106,9 @@ public class LoginController implements Initializable {
         );
 
     }
+
+
+
 
 
 }

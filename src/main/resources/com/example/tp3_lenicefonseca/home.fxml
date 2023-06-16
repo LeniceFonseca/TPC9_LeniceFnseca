@@ -63,7 +63,7 @@
       </AnchorPane>
    </top>
    <left>
-      <ScrollPane prefHeight="200.0" prefWidth="300.0" style="-fx-background-color: #d3d3d3;" BorderPane.alignment="CENTER">
+      <ScrollPane fx:id="scrolleventos" prefHeight="200.0" prefWidth="300.0" style="-fx-background-color: #d3d3d3;" BorderPane.alignment="CENTER">
          <content>
             <VBox alignment="TOP_CENTER" prefHeight="796.0" prefWidth="282.0">
                <children>
@@ -75,34 +75,34 @@
                   <VBox alignment="TOP_CENTER" prefHeight="200.0" prefWidth="100.0">
                      <children>
                         <Label prefHeight="30.0" prefWidth="250.0" />
-                        <ImageView fitHeight="150.0" fitWidth="250.0" pickOnBounds="true" preserveRatio="true">
+                        <ImageView fitHeight="100.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
                            <image>
                               <Image url="@images/concerto.jpg" />
                            </image>
                         </ImageView>
-                        <Label prefHeight="30.0" prefWidth="250.0" text="18/06/2023">
+                        <Label prefHeight="18.0" prefWidth="163.0" text="18/06/2023">
+                           <font>
+                              <Font name="FreeSerif Bold" size="12.0" />
+                           </font>
+                        </Label>
+                        <Label prefHeight="18.0" prefWidth="185.0" text="   Concerto - Ruben Teixeira" textFill="#7a065bf5">
                            <font>
                               <Font name="FreeSerif Bold" size="15.0" />
                            </font>
                         </Label>
-                        <Label prefHeight="30.0" prefWidth="250.0" text="Concerto - Ruben Teixeira" textFill="#7a065bf5">
+                        <Label prefHeight="18.0" prefWidth="163.0" text="Mindelo">
                            <font>
-                              <Font name="FreeSerif Bold" size="20.0" />
+                              <Font name="FreeSerif Bold" size="15.0" />
                            </font>
                         </Label>
-                        <Label prefHeight="30.0" prefWidth="250.0" text="Mindelo">
+                        <Label prefHeight="18.0" prefWidth="163.0" text="200 interessados">
                            <font>
-                              <Font name="FreeSerif Bold" size="20.0" />
+                              <Font name="FreeSerif Bold" size="15.0" />
                            </font>
                         </Label>
-                        <Label prefHeight="30.0" prefWidth="250.0" text="200 interessados">
+                        <Label prefHeight="18.0" prefWidth="163.0" text="150 vão" textFill="#d02406">
                            <font>
-                              <Font name="FreeSerif Bold" size="20.0" />
-                           </font>
-                        </Label>
-                        <Label prefHeight="30.0" prefWidth="250.0" text="150 vão" textFill="#d02406">
-                           <font>
-                              <Font name="FreeSerif Bold" size="20.0" />
+                              <Font name="FreeSerif Bold" size="15.0" />
                            </font>
                         </Label>
                      </children>
@@ -110,34 +110,34 @@
                   <VBox alignment="TOP_CENTER" layoutX="10.0" layoutY="39.0" prefHeight="200.0" prefWidth="100.0">
                      <children>
                         <Label prefHeight="30.0" prefWidth="250.0" />
-                        <ImageView fitHeight="150.0" fitWidth="250.0" pickOnBounds="true" preserveRatio="true">
+                        <ImageView fitHeight="100.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
                            <image>
                               <Image url="@images/trilha.png" />
                            </image>
                         </ImageView>
-                        <Label prefHeight="30.0" prefWidth="250.0" text="05/08/2023">
+                        <Label prefHeight="18.0" prefWidth="163.0" text="05/08/2023">
+                           <font>
+                              <Font name="FreeSerif Bold" size="12.0" />
+                           </font>
+                        </Label>
+                        <Label prefHeight="18.0" prefWidth="163.0" text="Trilha" textFill="#7a065bf5">
                            <font>
                               <Font name="FreeSerif Bold" size="15.0" />
                            </font>
                         </Label>
-                        <Label prefHeight="30.0" prefWidth="250.0" text="Trilha" textFill="#7a065bf5">
+                        <Label prefHeight="18.0" prefWidth="163.0" text="Monte Verde">
                            <font>
-                              <Font name="FreeSerif Bold" size="20.0" />
+                              <Font name="FreeSerif Bold" size="15.0" />
                            </font>
                         </Label>
-                        <Label prefHeight="30.0" prefWidth="250.0" text="Verde">
+                        <Label prefHeight="18.0" prefWidth="163.0" text="50 interessados">
                            <font>
-                              <Font name="FreeSerif Bold" size="20.0" />
+                              <Font name="FreeSerif Bold" size="15.0" />
                            </font>
                         </Label>
-                        <Label prefHeight="30.0" prefWidth="250.0" text="50 interessados">
+                        <Label prefHeight="18.0" prefWidth="163.0" text="5 vão" textFill="#d02406">
                            <font>
-                              <Font name="FreeSerif Bold" size="20.0" />
-                           </font>
-                        </Label>
-                        <Label prefHeight="30.0" prefWidth="250.0" text="5 vão" textFill="#d02406">
-                           <font>
-                              <Font name="FreeSerif Bold" size="20.0" />
+                              <Font name="FreeSerif Bold" size="15.0" />
                            </font>
                         </Label>
                      </children>
@@ -145,69 +145,69 @@
                   <VBox alignment="TOP_CENTER" layoutX="10.0" layoutY="311.0" prefHeight="200.0" prefWidth="100.0">
                      <children>
                         <Label prefHeight="30.0" prefWidth="250.0" />
-                        <ImageView fitHeight="150.0" fitWidth="250.0" pickOnBounds="true" preserveRatio="true">
+                        <ImageView fitHeight="100.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
                            <image>
                               <Image url="@images/campanha.jpg" />
                            </image>
                         </ImageView>
-                        <Label prefHeight="30.0" prefWidth="250.0" text="10/06/2023">
+                        <Label prefHeight="18.0" prefWidth="163.0" text="10/06/2023">
+                           <font>
+                              <Font name="FreeSerif Bold" size="12.0" />
+                           </font>
+                        </Label>
+                        <Label prefHeight="18.0" prefWidth="163.0" text="Campanha de limpeza" textFill="#7a065bf5">
                            <font>
                               <Font name="FreeSerif Bold" size="15.0" />
                            </font>
                         </Label>
-                        <Label prefHeight="30.0" prefWidth="250.0" text="Campanha de limpeza" textFill="#7a065bf5">
+                        <Label prefHeight="18.0" prefWidth="163.0" text="Norte de Baía">
                            <font>
-                              <Font name="FreeSerif Bold" size="20.0" />
+                              <Font name="FreeSerif Bold" size="15.0" />
                            </font>
                         </Label>
-                        <Label prefHeight="30.0" prefWidth="250.0" text="Norte de Baía">
+                        <Label prefHeight="18.0" prefWidth="163.0" text="50 interessados">
                            <font>
-                              <Font name="FreeSerif Bold" size="20.0" />
+                              <Font name="FreeSerif Bold" size="15.0" />
                            </font>
                         </Label>
-                        <Label prefHeight="30.0" prefWidth="250.0" text="50 interessados">
+                        <Label prefHeight="18.0" prefWidth="163.0" text="45 vão" textFill="#d02406">
                            <font>
-                              <Font name="FreeSerif Bold" size="20.0" />
-                           </font>
-                        </Label>
-                        <Label prefHeight="30.0" prefWidth="250.0" text="45 vão" textFill="#d02406">
-                           <font>
-                              <Font name="FreeSerif Bold" size="20.0" />
+                              <Font name="FreeSerif Bold" size="15.0" />
                            </font>
                         </Label>
                      </children>
                   </VBox>
                   <VBox alignment="TOP_CENTER" layoutX="10.0" layoutY="583.0" prefHeight="200.0" prefWidth="100.0">
                      <children>
-                        <Label prefHeight="30.0" prefWidth="250.0" />
-                        <ImageView fitHeight="150.0" fitWidth="250.0" pickOnBounds="true" preserveRatio="true">
+                        <Label prefHeight="64.0" prefWidth="250.0" />
+                        <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
                            <image>
                               <Image url="@images/otaku.jpg" />
                            </image>
                         </ImageView>
-                        <Label prefHeight="30.0" prefWidth="250.0" text="15/09/2023">
+                        <Label prefHeight="18.0" prefWidth="163.0" text="15/09/2023">
+                           <font>
+                              <Font name="FreeSerif Bold" size="12.0" />
+                           </font>
+                        </Label>
+                        <Label prefHeight="18.0" prefWidth="163.0" text="Encontro de Otakus" textFill="#7a065bf5">
                            <font>
                               <Font name="FreeSerif Bold" size="15.0" />
                            </font>
                         </Label>
-                        <Label prefHeight="30.0" prefWidth="250.0" text="Encontro de Otakus" textFill="#7a065bf5">
+                        <Label prefHeight="18.0" prefWidth="163.0" text="CCM">
                            <font>
-                              <Font name="FreeSerif Bold" size="20.0" />
+                              <Font name="FreeSerif Bold" size="15.0" />
                            </font>
                         </Label>
-                        <Label prefHeight="30.0" prefWidth="250.0" text="CCM">
+                        <Label prefHeight="18.0" prefWidth="163.0" text="500 interessados">
                            <font>
-                              <Font name="FreeSerif Bold" size="20.0" />
+                              <Font name="FreeSerif Bold" size="15.0" />
                            </font>
                         </Label>
-                        <Label prefHeight="30.0" prefWidth="250.0" text="500 interessados">
+                        <Label prefHeight="18.0" prefWidth="163.0" text="450 vão" textFill="#d02406">
                            <font>
-                              <Font name="FreeSerif Bold" size="20.0" />
-                           </font>
-                        </Label>
-                        <Label prefHeight="30.0" prefWidth="250.0" text="450 vão" textFill="#d02406">
-                           <font>
-                              <Font name="FreeSerif Bold" size="20.0" />
+                              <Font name="FreeSerif Bold" size="15.0" />
                            </font>
                         </Label>
                      </children>
@@ -218,7 +218,7 @@
       </ScrollPane>
    </left>
    <right>
-      <ScrollPane prefHeight="200.0" prefWidth="300.0" style="-fx-background-color: #d3d3d3;" BorderPane.alignment="CENTER">
+      <ScrollPane fx:id="scrollgrupos" prefHeight="200.0" prefWidth="300.0" style="-fx-background-color: #d3d3d3;" BorderPane.alignment="CENTER">
          <content>
             <VBox alignment="TOP_CENTER" prefHeight="796.0" prefWidth="282.0">
                <children>
@@ -229,13 +229,13 @@
                   </Label>
                   <AnchorPane prefHeight="96.0" prefWidth="285.0">
                      <children>
-                        <Circle fx:id="circle5" fill="#1f93ff00" layoutX="39.0" layoutY="45.0" radius="31.0" stroke="#7a065b" strokeType="INSIDE" strokeWidth="5.0" />
-                        <Label layoutX="75.0" layoutY="23.0" prefHeight="29.0" prefWidth="202.0" text="Finalistas 2023" textFill="#00c1da">
+                        <Circle fx:id="circle5" fill="#1f93ff00" layoutX="53.0" layoutY="45.0" radius="25.0" stroke="#7a065b" strokeType="INSIDE" strokeWidth="5.0" />
+                        <Label layoutX="89.0" layoutY="23.0" prefHeight="29.0" prefWidth="170.0" text="Finalistas 2023" textFill="#00c1da">
                            <font>
                               <Font name="FreeSerif Bold" size="20.0" />
                            </font>
                         </Label>
-                        <Label layoutX="75.0" layoutY="45.0" prefHeight="29.0" prefWidth="199.0" text="100 mebros" textFill="SILVER">
+                        <Label layoutX="89.0" layoutY="45.0" prefHeight="29.0" prefWidth="170.0" text="100 mebros" textFill="SILVER">
                            <font>
                               <Font name="FreeSerif Bold" size="15.0" />
                            </font>
@@ -244,13 +244,13 @@
                   </AnchorPane>
                   <AnchorPane layoutX="10.0" layoutY="39.0" prefHeight="96.0" prefWidth="285.0">
                      <children>
-                        <Circle fx:id="circle6" fill="#1f93ff00" layoutX="39.0" layoutY="45.0" radius="31.0" stroke="#7a065b" strokeType="INSIDE" strokeWidth="5.0" />
-                        <Label layoutX="75.0" layoutY="23.0" prefHeight="29.0" prefWidth="199.0" text="LEIT" textFill="#00c1da">
+                        <Circle fx:id="circle6" fill="#1f93ff00" layoutX="53.0" layoutY="45.0" radius="25.0" stroke="#7a065b" strokeType="INSIDE" strokeWidth="5.0" />
+                        <Label layoutX="89.0" layoutY="23.0" prefHeight="29.0" prefWidth="170.0" text="LEIT" textFill="#00c1da">
                            <font>
                               <Font name="FreeSerif Bold" size="20.0" />
                            </font>
                         </Label>
-                        <Label layoutX="75.0" layoutY="45.0" prefHeight="29.0" prefWidth="203.0" text="50 mebros" textFill="SILVER">
+                        <Label layoutX="89.0" layoutY="45.0" prefHeight="29.0" prefWidth="170.0" text="50 mebros" textFill="SILVER">
                            <font>
                               <Font name="FreeSerif Bold" size="15.0" />
                            </font>
@@ -259,13 +259,13 @@
                   </AnchorPane>
                   <AnchorPane layoutX="10.0" layoutY="135.0" prefHeight="96.0" prefWidth="285.0">
                      <children>
-                        <Circle fx:id="circle7" fill="#1f93ff00" layoutX="39.0" layoutY="45.0" radius="31.0" stroke="#7a065b" strokeType="INSIDE" strokeWidth="5.0" />
-                        <Label layoutX="75.0" layoutY="23.0" prefHeight="29.0" prefWidth="200.0" text="Parquinho" textFill="#00c1da">
+                        <Circle fx:id="circle7" fill="#1f93ff00" layoutX="53.0" layoutY="45.0" radius="25.0" stroke="#7a065b" strokeType="INSIDE" strokeWidth="5.0" />
+                        <Label layoutX="89.0" layoutY="23.0" prefHeight="29.0" prefWidth="170.0" text="Parquinho" textFill="#00c1da">
                            <font>
                               <Font name="FreeSerif Bold" size="20.0" />
                            </font>
                         </Label>
-                        <Label layoutX="75.0" layoutY="45.0" prefHeight="29.0" prefWidth="199.0" text="500 mebros" textFill="SILVER">
+                        <Label layoutX="89.0" layoutY="45.0" prefHeight="29.0" prefWidth="170.0" text="500 mebros" textFill="SILVER">
                            <font>
                               <Font name="FreeSerif Bold" size="15.0" />
                            </font>
@@ -274,13 +274,13 @@
                   </AnchorPane>
                   <AnchorPane layoutX="10.0" layoutY="231.0" prefHeight="96.0" prefWidth="285.0">
                      <children>
-                        <Circle fx:id="circle8" fill="#1f93ff00" layoutX="39.0" layoutY="45.0" radius="31.0" stroke="#7a065b" strokeType="INSIDE" strokeWidth="5.0" />
-                        <Label layoutX="75.0" layoutY="23.0" prefHeight="29.0" prefWidth="200.0" text="Caloiros UTA" textFill="#00c1da">
+                        <Circle fx:id="circle8" fill="#1f93ff00" layoutX="53.0" layoutY="45.0" radius="25.0" stroke="#7a065b" strokeType="INSIDE" strokeWidth="5.0" />
+                        <Label layoutX="89.0" layoutY="23.0" prefHeight="29.0" prefWidth="170.0" text="Caloiros UTA" textFill="#00c1da">
                            <font>
                               <Font name="FreeSerif Bold" size="20.0" />
                            </font>
                         </Label>
-                        <Label layoutX="75.0" layoutY="45.0" prefHeight="29.0" prefWidth="202.0" text="50 mebros" textFill="SILVER">
+                        <Label layoutX="89.0" layoutY="45.0" prefHeight="29.0" prefWidth="170.0" text="50 mebros" textFill="SILVER">
                            <font>
                               <Font name="FreeSerif Bold" size="15.0" />
                            </font>
@@ -289,13 +289,13 @@
                   </AnchorPane>
                   <AnchorPane layoutX="10.0" layoutY="327.0" prefHeight="96.0" prefWidth="285.0">
                      <children>
-                        <Circle fx:id="circle9" fill="#1f93ff00" layoutX="39.0" layoutY="45.0" radius="31.0" stroke="#7a065b" strokeType="INSIDE" strokeWidth="5.0" />
-                        <Label layoutX="75.0" layoutY="23.0" prefHeight="29.0" prefWidth="201.0" text="AE-UTA" textFill="#00c1da">
+                        <Circle fx:id="circle9" fill="#1f93ff00" layoutX="53.0" layoutY="45.0" radius="25.0" stroke="#7a065b" strokeType="INSIDE" strokeWidth="5.0" />
+                        <Label layoutX="89.0" layoutY="23.0" prefHeight="29.0" prefWidth="170.0" text="AE-UTA" textFill="#00c1da">
                            <font>
                               <Font name="FreeSerif Bold" size="20.0" />
                            </font>
                         </Label>
-                        <Label layoutX="75.0" layoutY="45.0" prefHeight="29.0" prefWidth="201.0" text="15 mebros" textFill="SILVER">
+                        <Label layoutX="89.0" layoutY="45.0" prefHeight="29.0" prefWidth="170.0" text="15 mebros" textFill="SILVER">
                            <font>
                               <Font name="FreeSerif Bold" size="15.0" />
                            </font>
@@ -307,7 +307,7 @@
          </content></ScrollPane>
    </right>
    <center>
-      <ScrollPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+      <ScrollPane fx:id="scrollfeed" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
          <content>
             <VBox alignment="TOP_CENTER" prefHeight="907.0" prefWidth="697.0">
                <children>
@@ -364,7 +364,7 @@
                                     <Cursor fx:constant="HAND" />
                                  </cursor>
                               </Button>
-                              <Button layoutX="487.0" layoutY="35.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="200.0" style="-fx-background-color: transparent; -fx-border-color: #47022e; -fx-border-width: 5; -fx-border-radius: 15;" text="Ler Comentários">
+                              <Button fx:id="lercomentario" layoutX="487.0" layoutY="35.0" mnemonicParsing="false" onAction="#read" prefHeight="35.0" prefWidth="200.0" style="-fx-background-color: transparent; -fx-border-color: #47022e; -fx-border-width: 5; -fx-border-radius: 15;" text="Ler Comentários">
                                  <font>
                                     <Font name="FreeSerif Bold" size="18.0" />
                                  </font>
@@ -372,7 +372,7 @@
                                     <Cursor fx:constant="HAND" />
                                  </cursor>
                               </Button>
-                              <Button layoutX="250.0" layoutY="35.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="200.0" style="-fx-background-color: transparent; -fx-border-color: #47022e; -fx-border-width: 5; -fx-border-radius: 15;" text="Comentar">
+                              <Button fx:id="comentar" layoutX="250.0" layoutY="35.0" mnemonicParsing="false" onAction="#comentar" prefHeight="35.0" prefWidth="200.0" style="-fx-background-color: transparent; -fx-border-color: #47022e; -fx-border-width: 5; -fx-border-radius: 15;" text="Comentar">
                                  <font>
                                     <Font name="FreeSerif Bold" size="18.0" />
                                  </font>
@@ -480,7 +480,7 @@
                      <center>
                         <AnchorPane prefHeight="364.0" prefWidth="545.0" BorderPane.alignment="CENTER">
                            <children>
-                              <Label fx:id="lblegenda1" layoutX="19.0" layoutY="6.0" prefHeight="29.0" prefWidth="561.0" text="Avatear e o ccaminho da agua " textFill="#000000f5">
+                              <Label fx:id="lblegenda1" layoutX="19.0" layoutY="6.0" prefHeight="29.0" prefWidth="561.0" text="Avatar e o caminho da agua " textFill="#000000f5">
                                  <font>
                                     <Font name="FreeSerif" size="18.0" />
                                  </font>

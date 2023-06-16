@@ -8,11 +8,13 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
+import javafx.scene.control.ScrollPane;
 import javafx.scene.control.TextField;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.paint.ImagePattern;
 import javafx.scene.shape.Circle;
+import javafx.stage.Modality;
 import javafx.stage.Stage;
 import javafx.scene.text.Text;
 
@@ -79,7 +81,6 @@ public class HomeController implements Initializable {
     @FXML
     private Label lblegenda2;
 
-
     @FXML
     private Text post;
 
@@ -92,11 +93,34 @@ public class HomeController implements Initializable {
     @FXML
     private ImageView minhafoto1;
 
+    @FXML
+    private Button comentar;
+
+    @FXML
+    private Button lercomentario;
+
+    @FXML
+    private ScrollPane scrolleventos;
+
+    @FXML
+    private ScrollPane scrollfeed;
+
+    @FXML
+    private ScrollPane scrollgrupos;
 
 
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
+
+        scrolleventos.setHbarPolicy(ScrollPane.ScrollBarPolicy.NEVER);
+        scrolleventos.setVbarPolicy(ScrollPane.ScrollBarPolicy.NEVER);
+
+        scrollfeed.setHbarPolicy(ScrollPane.ScrollBarPolicy.NEVER);
+        scrollfeed.setVbarPolicy(ScrollPane.ScrollBarPolicy.NEVER);
+
+        scrollgrupos.setHbarPolicy(ScrollPane.ScrollBarPolicy.NEVER);
+        scrollgrupos.setVbarPolicy(ScrollPane.ScrollBarPolicy.NEVER);
 
         String sql = "SELECT nome, apelido FROM usuarios WHERE username = ?";
         PreparedStatement preparedStatement = null;
@@ -219,6 +243,33 @@ public class HomeController implements Initializable {
         stage.setScene(new Scene(root, 1300,900));
         stage.show();
     }
+
+
+    @FXML
+    public void comentar(ActionEvent e) throws IOException {
+
+        Parent root = null;
+        root = FXMLLoader.load(getClass().getResource("comentar.fxml"));
+        Stage secondaryStage = new Stage();
+        secondaryStage.initModality(Modality.APPLICATION_MODAL);
+        secondaryStage.initOwner(comentar.getScene().getWindow());
+        secondaryStage.setScene(new Scene(root, 600,400));
+        secondaryStage.show();
+
+    }
+
+
+    @FXML
+    void read(ActionEvent event) throws IOException {
+        Parent root = null;
+        root = FXMLLoader.load(getClass().getResource("lercomentarios.fxml"));
+        Stage otherStage = new Stage();
+        otherStage.initModality(Modality.APPLICATION_MODAL);
+        otherStage.initOwner(lercomentario.getScene().getWindow());
+        otherStage.setScene(new Scene(root, 600,400));
+        otherStage.show();
+    }
+
 
 }
 
