@@ -112,6 +112,7 @@ public class HomeController implements Initializable {
     private ScrollPane scrollgrupos;
 
     static String caminho;
+    static String pesquisar;
 
 
 
@@ -287,6 +288,37 @@ public class HomeController implements Initializable {
         otherStage.setScene(new Scene(root, 600,400));
         otherStage.show();
     }
+
+
+    @FXML
+    void pesquisar(ActionEvent event) {
+        String sql = "SELECT username FROM usuarios WHERE username = ?";
+        PreparedStatement preparedStatement = null;
+
+        try {
+
+            preparedStatement = Conexao.getConnection().prepareStatement(sql);
+            preparedStatement.setString(1, tfpesquisar.getText());
+
+            ResultSet resultSet = preparedStatement.executeQuery();
+
+            while (resultSet.next()) {
+                pesquisar = tfpesquisar.getText();
+                FXMLLoader loader = new FXMLLoader();
+                loader.setLocation(getClass().getResource("resultadopesquisa.fxml"));
+                Parent newContent = loader.load();
+                scrollfeed.setContent(newContent);
+            }
+
+            preparedStatement.execute();
+
+        } catch (SQLException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
+    }
+
 
 
 }

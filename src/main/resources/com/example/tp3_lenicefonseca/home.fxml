@@ -18,10 +18,10 @@
 
 <BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="900.0" prefWidth="1300.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.tp3_lenicefonseca.HomeController">
    <top>
-      <AnchorPane prefHeight="119.0" prefWidth="1300.0" style="-fx-background-color: #47022e;" BorderPane.alignment="CENTER">
+      <AnchorPane prefHeight="120.0" prefWidth="1300.0" style="-fx-background-color: #47022e;" BorderPane.alignment="CENTER">
          <children>
             <TextField fx:id="tfpesquisar" layoutX="31.0" layoutY="43.0" prefHeight="35.0" prefWidth="250.0" promptText="Pesquisar" style="-fx-background-radius: 5; -fx-border-radius: 5; -fx-border-color: #7a065b;" />
-            <Button fx:id="btnpesquisar" layoutX="245.0" layoutY="45.0" minHeight="33.0" minWidth="33.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="33.0" style="-fx-background-radius: 30; -fx-min-width: 30; -fx-min-height: 30; -fx-max-height: 30; -fx-max-width: 30; -fx-background-color: transparent;">
+            <Button fx:id="btnpesquisar" layoutX="245.0" layoutY="45.0" minHeight="33.0" minWidth="33.0" mnemonicParsing="false" onAction="#pesquisar" prefHeight="33.0" prefWidth="33.0" style="-fx-background-radius: 30; -fx-min-width: 30; -fx-min-height: 30; -fx-max-height: 30; -fx-max-width: 30; -fx-background-color: transparent;">
                <opaqueInsets>
                   <Insets />
                </opaqueInsets>

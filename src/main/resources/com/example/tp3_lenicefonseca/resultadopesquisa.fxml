@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<ScrollPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="780.0" prefWidth="700.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/20.0.1" fx:controller="com.example.tp3_lenicefonseca.ResultadoPesquisaController">
+   <content>
+      <VBox fx:id="vbox" prefHeight="780.0" prefWidth="700.0">
+         <children>
+            <Button fx:id="voltar" mnemonicParsing="false" onAction="#voltar" style="-fx-background-color: black;" text="Voltar" textFill="WHITE" />
+            <AnchorPane layoutX="10.0" layoutY="10.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #7a065b;">
+               <children>
+                  <Circle fx:id="circle" fill="#1f93ff00" layoutX="78.0" layoutY="100.0" radius="40.0" stroke="#36001f" strokeType="INSIDE" strokeWidth="5.0" />
+                  <Circle fill="#1f93ff00" layoutX="78.0" layoutY="100.0" radius="46.0" stroke="#fffffff5" strokeType="INSIDE" strokeWidth="5.0" />
+                  <Label fx:id="username" layoutX="147.0" layoutY="78.0" prefHeight="45.0" prefWidth="292.0" text="Username" textFill="#fffefe">
+                     <font>
+                        <Font size="26.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="btnperfil" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#perfil" prefHeight="173.0" prefWidth="657.0" style="-fx-background-color: transparent;" />
+                  <Label fx:id="username1" layoutX="132.0" layoutY="124.0" prefHeight="45.0" prefWidth="292.0" textFill="#fffefe">
+                     <font>
+                        <Font size="26.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+         </children>
+      </VBox>
+   </content>
+</ScrollPane>

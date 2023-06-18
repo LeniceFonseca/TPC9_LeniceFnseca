@@ -4,12 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3d985bbf-97e1-4709-8c93-181592693bf1" name="Changes" comment="version final">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/tp3_lenicefonseca/MypostsController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/tp3_lenicefonseca/myposts.fxml" afterDir="false" />
+    <list default="true" id="3d985bbf-97e1-4709-8c93-181592693bf1" name="Changes" comment="funcionalidades botoes myprofile done">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/tp3_lenicefonseca/PerfilPesquisadoController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/tp3_lenicefonseca/ResultadoPesquisaController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/tp3_lenicefonseca/perfilpesquisado.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/tp3_lenicefonseca/resultadopesquisa.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/tp3_lenicefonseca/MyprofileController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/tp3_lenicefonseca/MyprofileController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/tp3_lenicefonseca/myprofile.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/tp3_lenicefonseca/myprofile.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/tp3_lenicefonseca/HomeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/tp3_lenicefonseca/HomeController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/tp3_lenicefonseca/home.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/tp3_lenicefonseca/home.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -194,7 +196,14 @@
       <option name="project" value="LOCAL" />
       <updated>1686940491502</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="funcionalidades botoes myprofile done">
+      <created>1687125824994</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1687125824994</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -218,6 +227,7 @@
     <MESSAGE value="upload" />
     <MESSAGE value="v2" />
     <MESSAGE value="version final" />
-    <option name="LAST_COMMIT_MESSAGE" value="version final" />
+    <MESSAGE value="funcionalidades botoes myprofile done" />
+    <option name="LAST_COMMIT_MESSAGE" value="funcionalidades botoes myprofile done" />
   </component>
 </project>
