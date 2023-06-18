@@ -141,15 +141,19 @@ public class MyprofileController implements Initializable {
     @FXML
     public void home(ActionEvent event) throws IOException {
         Parent root = null;
-        root = FXMLLoader.load(getClass().getResource("myprofile.fxml"));
+        root = FXMLLoader.load(getClass().getResource("home.fxml"));
         Stage stage = (Stage) btnsignoff.getScene().getWindow();
         stage.setScene(new Scene(root, 1300,900));
         stage.show();
     }
 
     @FXML
-    void myPosts(ActionEvent event) {
-
+    void myPosts(ActionEvent event) throws IOException {
+        Parent root = null;
+        root = FXMLLoader.load(getClass().getResource("myposts.fxml"));
+        Stage stage = (Stage) btnsignoff.getScene().getWindow();
+        stage.setScene(new Scene(root, 1300,900));
+        stage.show();
     }
 
     @FXML
@@ -158,8 +162,12 @@ public class MyprofileController implements Initializable {
     }
 
     @FXML
-    void signOff(ActionEvent event) {
-
+    void signOff(ActionEvent event) throws IOException {
+        Parent root = null;
+        root = FXMLLoader.load(getClass().getResource("login.fxml"));
+        Stage stage = (Stage) btnsignoff.getScene().getWindow();
+        stage.setScene(new Scene(root, 1300,900));
+        stage.show();
     }
 
     @Override

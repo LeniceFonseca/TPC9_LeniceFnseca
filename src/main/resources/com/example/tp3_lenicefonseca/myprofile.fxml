@@ -9,50 +9,13 @@
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
 <?import javafx.scene.shape.Circle?>
 <?import javafx.scene.shape.Line?>
 <?import javafx.scene.shape.Rectangle?>
 <?import javafx.scene.text.Font?>
 
 <BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="900.0" prefWidth="1300.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.tp3_lenicefonseca.MyprofileController">
-    <left>
-        <AnchorPane prefHeight="200.0" prefWidth="500.0" style="-fx-background-color: #7a065b;" BorderPane.alignment="CENTER">
-            <children>
-            <Line endX="414.0" layoutX="98.0" layoutY="2.0" startX="-100.0" stroke="#fff9f9" strokeWidth="5.0" />
-            <Line endX="414.0" layoutX="98.0" layoutY="131.0" startX="-100.0" stroke="#fff9f9" strokeWidth="5.0" />
-            <Label alignment="CENTER" layoutX="133.0" layoutY="46.0" prefHeight="38.0" prefWidth="241.0" text="Editar perfil" textAlignment="CENTER" textFill="WHITE">
-               <font>
-                  <Font name="FreeSerif Bold" size="31.0" />
-               </font>
-            </Label>
-            <Button fx:id="btnhome" layoutX="37.0" layoutY="372.0" mnemonicParsing="false" onMouseClicked="#home" prefHeight="54.0" prefWidth="436.0" style="-fx-border-color: #7a065b;" text="Home" textFill="#047a8af5">
-               <font>
-                  <Font name="FreeSerif Bold" size="26.0" />
-               </font>
-               <cursor>
-                  <Cursor fx:constant="HAND" />
-               </cursor>
-            </Button>
-            <Button fx:id="btnsignoff" layoutX="37.0" layoutY="526.0" mnemonicParsing="false" onAction="#signOff" prefHeight="54.0" prefWidth="436.0" style="-fx-border-color: #7a065b;" text="SignOff" textFill="#047a8af5">
-               <font>
-                  <Font name="FreeSerif Bold" size="26.0" />
-               </font>
-               <cursor>
-                  <Cursor fx:constant="HAND" />
-               </cursor>
-            </Button>
-            <Button fx:id="btnmyposts" layoutX="37.0" layoutY="450.0" mnemonicParsing="false" onAction="#myPosts" prefHeight="54.0" prefWidth="436.0" style="-fx-border-color: #7a065b;" text="Meus posts" textFill="#047a8af5">
-               <font>
-                  <Font name="FreeSerif Bold" size="26.0" />
-               </font>
-               <cursor>
-                  <Cursor fx:constant="HAND" />
-               </cursor>
-            </Button>
-            <Line endX="414.0" layoutX="102.0" layoutY="898.0" startX="-100.0" stroke="#fff9f9" strokeWidth="5.0" />
-            </children>
-        </AnchorPane>
-    </left>
     <right>
         <AnchorPane prefHeight="904.0" prefWidth="804.0" style="-fx-background-color: #36001f;" BorderPane.alignment="CENTER">
             <children>
@@ -95,4 +58,46 @@
             </children>
         </AnchorPane>
     </right>
+   <left>
+      <VBox alignment="TOP_CENTER" prefHeight="904.0" prefWidth="500.0" style="-fx-background-color: #7a065b;" BorderPane.alignment="CENTER">
+         <children>
+            <Label alignment="CENTER" prefHeight="108.0" prefWidth="513.0" text="Meu Perfil" textFill="WHITE">
+               <font>
+                  <Font name="FreeSerif Bold" size="50.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" prefHeight="268.0" prefWidth="500.0" textFill="WHITE">
+               <font>
+                  <Font name="FreeSerif Bold" size="50.0" />
+               </font>
+            </Label>
+            <Button fx:id="btnhome" mnemonicParsing="false" onAction="#home" prefHeight="54.0" prefWidth="436.0" style="-fx-border-color: #047a8a; -fx-border-width: 3; -fx-background-color: #047a8a; -fx-background-radius: 20; -fx-border-radius: 20;" text="Home" textFill="WHITE">
+               <font>
+                  <Font name="FreeSerif Bold" size="26.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Label prefHeight="52.0" prefWidth="505.0" />
+            <Button fx:id="btnmyposts" mnemonicParsing="false" onAction="#myPosts" prefHeight="54.0" prefWidth="436.0" style="-fx-border-color: #047a8a; -fx-border-width: 3; -fx-background-color: #047a8a; -fx-background-radius: 20; -fx-border-radius: 20;" text="My posts" textFill="WHITE">
+               <font>
+                  <Font name="FreeSerif Bold" size="26.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Label prefHeight="52.0" prefWidth="505.0" />
+            <Button fx:id="btnsignoff" mnemonicParsing="false" onAction="#signOff" prefHeight="54.0" prefWidth="436.0" style="-fx-border-color: #047a8a; -fx-border-width: 3; -fx-background-color: #047a8a; -fx-background-radius: 20; -fx-border-radius: 20;" text="SignOff" textFill="WHITE">
+               <font>
+                  <Font name="FreeSerif Bold" size="26.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+         </children>
+      </VBox>
+   </left>
 </BorderPane>
