@@ -12,6 +12,7 @@ import javafx.scene.control.ScrollPane;
 import javafx.scene.control.TextField;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
+import javafx.scene.input.KeyCode;
 import javafx.scene.paint.ImagePattern;
 import javafx.scene.shape.Circle;
 import javafx.stage.Modality;
@@ -118,6 +119,12 @@ public class HomeController implements Initializable {
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
+
+        tfpesquisar.setOnKeyPressed(event -> {
+            if (event.getCode() == KeyCode.ENTER) {
+                pesquisar();
+            }
+        });
 
         scrolleventos.setHbarPolicy(ScrollPane.ScrollBarPolicy.NEVER);
         scrolleventos.setVbarPolicy(ScrollPane.ScrollBarPolicy.NEVER);
@@ -291,7 +298,7 @@ public class HomeController implements Initializable {
 
 
     @FXML
-    void pesquisar(ActionEvent event) {
+    void pesquisar() {
         String sql = "SELECT username FROM usuarios WHERE username = ?";
         PreparedStatement preparedStatement = null;
 
